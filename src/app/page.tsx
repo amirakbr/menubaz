@@ -1,7 +1,9 @@
+import HeroSection from './_components/hero/hero';
+
 export default function Home() {
-	return (
-		<>
-			<p>تست تست تست</p>
-		</>
-	);
+  return (
+    <>
+      <HeroSection />
+    </>
+  );
 }

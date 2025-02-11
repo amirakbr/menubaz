@@ -27,8 +27,8 @@ const Footer = () => {
           <address className="text-title-400">{address}</address>
           <p className="text-title">همراه ما باشید!</p>
           <div className="flex items-center gap-2">
-            {socialMediaLink?.map(({ icon: Icon, link }) => (
-              <Link href={link}>
+            {socialMediaLink?.map(({ icon: Icon, link }, index) => (
+              <Link href={link} key={`social links ${index}`}>
                 <Icon height={24} width={24} />
               </Link>
             ))}
