@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="fa-IR" dir="rtl">
       <body className={`antialiased container mx-auto ${iranYekan?.className} ${iranYekan?.variable}`}>
         <Header />
-        <main>{children}</main>
+        <main className="px-4">{children}</main>
         <Footer />
       </body>
     </html>
