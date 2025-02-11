@@ -7,12 +7,12 @@ const FeatureBar = ({ featureBarData, feature, setFeature }: IFeatureBarProps) =
       {featureBarData?.map(({ label, name }) => (
         <Button
           size="sm"
+          color={feature === name ? `secondary` : 'secondary'}
           onClick={() => {
             if (feature !== name) {
               setFeature?.(name);
             }
           }}
-          variant='solid'
         >
           {label}
         </Button>
