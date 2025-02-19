@@ -1,7 +1,7 @@
 import Analytics from './_components/analytic';
 import AnalyticsImage from './_components/analyticsImage';
 
-const FeatureSection = () => {
+const AnalyticsSection = () => {
   return (
     <div className="flex flex-col gap-4">
       <Analytics />
@@ -10,4 +10,4 @@ const FeatureSection = () => {
   );
 };
 
-export default FeatureSection;
+export default AnalyticsSection;
