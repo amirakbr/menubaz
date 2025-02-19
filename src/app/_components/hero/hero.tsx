@@ -16,10 +16,10 @@ const HeroSection = () => {
           منوباز یک نرم‌افزار جامع و یکپارچه برای مدیریت کامل رستوران، فست‌فود و کافی شاپ است که با امکاناتی نظیر مدیریت سفارشات و موجودی،حسابداری و
           گزارش های مالی و ...، تمامی نیازهای شما را پوشش می دهد و شما را از استفاده از سایر نرم افزارها بی نیاز می کند.
         </h2>
-        <Button size="md" className="bg-gray border-gray" variant="none">
+        <Button size="medium" className="bg-gray border-gray" variant="secondary">
           ثبت نام و دریافت فوری
         </Button>
-        <Button size="md" className="bg-transparent text-black border-gray" variant="bordered">
+        <Button size="medium" className="bg-transparent text-black border-gray" variant="outline">
           مشاهده تعرفه و امکانات
         </Button>
         <div className="flex items-center justify-center gap-2 mt-2">

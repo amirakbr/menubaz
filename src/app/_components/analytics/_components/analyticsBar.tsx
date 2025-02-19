@@ -1,18 +1,19 @@
 import Button from '@/app/commonComponents/button';
-import { IFeatureBarProps } from '../interface';
+import { IAnalyticsBarProps } from '../interface';
 
-const FeatureBar = ({ featureBarData, feature, setFeature }: IFeatureBarProps) => {
+const AnalyticsBar = ({ analyticsBarData, feature, setFeature }: IAnalyticsBarProps) => {
   return (
     <div className="flex items-center gap-1 p-2 rounded-xl bg-white-200">
-      {featureBarData?.map(({ label, name }) => (
+      {analyticsBarData?.map(({ label, name }) => (
         <Button
-          size="sm"
-          color={feature === name ? `secondary` : 'secondary'}
+          size="small"
+          variant={feature === name ? `secondary` : 'none'}
           onClick={() => {
             if (feature !== name) {
               setFeature?.(name);
             }
           }}
+          key={`feature ${name}`}
         >
           {label}
         </Button>
@@ -21,4 +22,4 @@ const FeatureBar = ({ featureBarData, feature, setFeature }: IFeatureBarProps) =
   );
 };
 
-export default FeatureBar;
+export default AnalyticsBar;

@@ -1,5 +1,5 @@
-export interface IFeatureBarProps {
-  featureBarData: {
+export interface IAnalyticsBarProps {
+  analyticsBarData: {
     label: string;
     name: string;
   }[];

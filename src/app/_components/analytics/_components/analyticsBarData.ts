@@ -1,4 +1,4 @@
-const featureBarData = [
+const analyticsBarData = [
   {
     label: 'داشبورد',
     name: 'dashboard',
@@ -17,4 +17,4 @@ const featureBarData = [
   },
 ];
 
-export default featureBarData;
+export default analyticsBarData;

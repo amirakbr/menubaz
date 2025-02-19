@@ -1,11 +1,8 @@
-import { ReactNode } from 'react';
-import { IColor, ISize, IVariant } from '../commonInterface';
+import { ButtonProps as MuiButtonProps } from '@mui/base';
 
-export interface IButtonProps {
-  size?: ISize;
-  color?: IColor;
-  variant?: IVariant;
-  onClick?: () => void;
-  children: ReactNode;
+export interface IButtonProps extends MuiButtonProps {
   className?: string;
+  children: React.ReactNode;
+  size?: 'small' | 'medium' | 'large';
+  variant?: 'primary' | 'secondary' | 'ghost' | 'danger' | 'success' | 'outline' | 'none';
 }
