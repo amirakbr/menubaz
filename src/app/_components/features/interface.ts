@@ -1,13 +1,14 @@
-import { ReactNode } from 'react';
+import { JSX, ReactNode } from 'react';
 
 export interface IFeatureCardProps {
-  icon: ReactNode;
-  title: string;
-  description: string;
+	icon: ReactNode;
+	title: string;
+	description: string;
 }
 
 export interface IFeatureData {
-  title: string;
-  summary: string;
-  description: string;
+	title: string;
+	summary: string;
+	description: string;
+	icon: () => JSX.Element;
 }
