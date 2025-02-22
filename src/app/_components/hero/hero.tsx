@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="grid grid-cols-1 gap-4 items-center justify-center px-4">
       <div className="flex items-center justify-center p-4 bg-white-200 rounded-xl">
-        <Image alt="laptop image with menubaz logo" src={'/hero/hero.png'} width={400} height={300} />
+        <Image alt="laptop image with menubaz logo" src={'/hero/hero.png'} width={400} height={300} priority />
       </div>
       <div className="flex flex-col gap-2">
         <h1 className="text-3xl font-bold text-center">
@@ -23,8 +23,8 @@ const HeroSection = () => {
           مشاهده تعرفه و امکانات
         </Button>
         <div className="flex items-center justify-center gap-2 mt-2">
-          <span className='h-5 w-5'>
-          <TickIcon width={20} height={20} />
+          <span className="h-5 w-5">
+            <TickIcon width={20} height={20} />
           </span>
           <p>7 روز ضمانت بازگشت وجه</p>
         </div>
