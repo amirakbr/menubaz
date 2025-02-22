@@ -18,6 +18,7 @@ const Button: React.FC<IButtonProps> = ({ children, size = 'medium', variant = '
     danger: 'bg-red-500 text-white hover:bg-red-600 focus:ring-red-300',
     success: 'bg-green-500 text-white hover:bg-green-600 focus:ring-green-300',
     outline: 'border border-gray-500 text-gray-700 bg-transparent hover:border-black hover:text-black',
+    none: '',
   };
 
   return (
