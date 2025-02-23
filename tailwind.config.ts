@@ -152,6 +152,20 @@ export default {
           DEFAULT: '#1D8BF7',
         },
       },
+      animation: {
+        marquee: 'marquee 20s linear infinite',
+        marqueeReverse: 'marqueeReverse 20s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(99%)' },
+        },
+        marqueeReverse: {
+          from: { transform: 'translateX(99%)' },
+          to: { transform: 'translateX(0)' },
+        },
+      },
       fontFamily: {
         'iran-yekan': 'var(--iran-yekan)',
       },
