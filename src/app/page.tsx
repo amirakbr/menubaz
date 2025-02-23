@@ -1,5 +1,6 @@
 import AnalyticsSection from './_components/analytics/analytic';
 import FeaturesSection from './_components/features/features';
+import FooterSuggestion from './_components/footerSuggestion/footerSuggestion';
 import HeroSection from './_components/hero/hero';
 import HowItWorksSection from './_components/howItWorks/howItWorks';
 import PartnersSection from './_components/partners/partners';
@@ -14,6 +15,7 @@ export default function Home() {
       <HowItWorksSection />
       <TestimonialSection />
       <PartnersSection />
+      <FooterSuggestion />
     </>
   );
 }
