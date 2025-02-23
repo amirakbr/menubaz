@@ -9,7 +9,7 @@ const FeatureSection = () => {
         دیگر نیازی به پرداخت هزینه برای افزونه‌های جانبی مانند باشگاه مشتریان و منوی دیجیتال ندارید؛ زیرا تمامی ابزارهای ضروری برای مدیریت رستوران شما
         به‌صورت یکپارچه در پلتفرم جامع منوباز فراهم شده است.
       </p>
-      <div className="grid grid-cols-1 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 gap-4">
         {featuresData?.map(({ description, summary, title, icon }, index) => (
           <FeatureCard description={description} summary={summary} title={title} key={`feature card ${index}`} icon={icon} />
         ))}
