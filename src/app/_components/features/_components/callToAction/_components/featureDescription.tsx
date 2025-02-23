@@ -3,7 +3,7 @@ import Lines from './icons/lines';
 
 const FeatureDescription = () => {
   return (
-    <div className="relative text-center flex flex-col gap-14 bg-white-200 rounded-lg py-12 px-4">
+    <div className="relative text-center flex flex-col justify-center gap-14 bg-white-200 rounded-lg py-8 px-4">
       <div className="relative">
         <h4 className="text-xl text-title font-semibold">وقتی که امکانات دقیقا با نیازهای شما هماهنگ می‌شوند!</h4>
         <Lines />
@@ -16,7 +16,7 @@ const FeatureDescription = () => {
         </p>
         <Bell />
       </div>
-      <div className="flex items-center justify-center ">
+      <div className="flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="99" height="20" fill="none" viewBox="0 0 99 20">
           <path
             stroke="#FFDE21"

@@ -7,7 +7,7 @@ import FeatureDescription from './_components/featureDescription';
 
 const CallToAction = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-5">
+    <div className="grid grid-cols-1 lg:grid-cols-[2.5fr_1fr] gap-5">
       <div className="flex flex-col gap-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="grid grid-cols-1 gap-4">
