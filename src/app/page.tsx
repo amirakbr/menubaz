@@ -1,5 +1,6 @@
 import AnalyticsSection from './_components/analytics/analytic';
 import BlogSection from './_components/blog/blog';
+import ContactUs from './_components/contactUs/contactUs';
 import FeaturesSection from './_components/features/features';
 import FeedBacksSection from './_components/feedback/feadbacks';
 import FooterSuggestion from './_components/footerSuggestion/footerSuggestion';
@@ -19,6 +20,7 @@ export default function Home() {
       <PartnersSection />
       <FeedBacksSection />
       <BlogSection />
+      <ContactUs />
       <FooterSuggestion />
     </>
   );
