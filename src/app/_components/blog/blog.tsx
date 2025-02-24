@@ -9,11 +9,11 @@ const Blog = () => {
         <p className="text-3xl font-bold text-center">
           <HighlightText keyword="منوباز" text="جدیدترین‌های منوباز را ببینید" />
         </p>
-        <div className="overflow-auto p-4">
-          <div className="flex item-center justify-between whitespace-nowrap">
-            <BlogCardContainer />
-          </div>
+
+        <div className="flex item-center justify-between whitespace-nowrap gap-8 overflow-auto p-4">
+          <BlogCardContainer />
         </div>
+
         <div className="w-full flex justify-center">
           <Button size="small" variant="secondary">
             پست های بیشتر
