@@ -169,6 +169,9 @@ export default {
       fontFamily: {
         'iran-yekan': 'var(--iran-yekan)',
       },
+      dropShadow: {
+        100: '0px 4px 16px rgba(34, 34, 34, 0.08)',
+      },
     },
   },
   plugins: [],
