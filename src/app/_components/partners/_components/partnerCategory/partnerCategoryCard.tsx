@@ -29,7 +29,7 @@ const PartnerCategoryCard = ({ selectedTab }: IPartnerCategoryCardProps) => {
               بیشتر بدانید
             </Button>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-[2fr_auto] gap-4">
             <div className="order-2 lg:order-1 flex flex-col gap-8 bg-white-200 rounded-lg p-4 justify-between">
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-2">
@@ -44,7 +44,7 @@ const PartnerCategoryCard = ({ selectedTab }: IPartnerCategoryCardProps) => {
               </div>
               <p className="text-orange-600 bg-primary-100 w-max py-1 px-3 rounded-full font-bold">{partnerInfo?.partner?.shopName}</p>
             </div>
-            <div className="order-1 lg:order-2 flex items-center justify-center py-4 lg:!p-10 bg-[#1C8C97] rounded-lg">
+            <div className="xl:w-[232px] xl:h-[232px]order-1 lg:order-2 flex items-center justify-center py-4 lg:!p-10 bg-[#1C8C97] rounded-lg">
               <div className="w-32 h-32">
                 <Image width={90} height={90} className="w-full h-full" alt="partner logo" src={partnerInfo?.logo} />
               </div>

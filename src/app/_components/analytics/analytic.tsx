@@ -3,7 +3,7 @@ import AnalyticsImage from './_components/analyticsImage';
 
 const AnalyticsSection = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-12">
       <Analytics />
       <AnalyticsImage />
     </div>

@@ -4,7 +4,7 @@ import Logo from '@/app/public/logo/logo';
 
 const Header = () => {
   return (
-    <header className="p-4 flex items-center gap-4">
+    <header className="p-4 flex items-center gap-4 container mx-auto">
       <MenuIcon />
       <div className="flex items-center justify-between gap-4 w-full">
         <Button size="small" variant='secondary'>

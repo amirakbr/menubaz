@@ -8,7 +8,7 @@ import { IPartnerCategoryCardProps } from '../../interface';
 const PartnerCategory = () => {
   const [selectedTab, setSelectedTab] = useState<IPartnerCategoryCardProps['selectedTab']>('restaurant');
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-8">
       <PartnerCategoryBar selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
       <PartnerCategoryCard selectedTab={selectedTab} />
     </div>

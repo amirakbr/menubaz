@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const CallCenter = () => {
   return (
-    <div className="xl:w-[328px] xl:h-[276px] flex flex-col gap-4 items-center justify-center bg-white-200 rounded-lg">
+    <div className="xl:w-[328px] xl:h-[276px] flex flex-col gap-4 items-center justify-center bg-white-200 rounded-lg p-4">
       <PhoneCallingIcon />
       <p className="text-title text-base">با افتخار، پاسخگوی شما هستیم</p>
       <div className="flex items-center gap-4">

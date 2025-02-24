@@ -12,16 +12,19 @@ import TestimonialSection from './_components/testimonials/testimonials';
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <AnalyticsSection />
-      <FeaturesSection />
-      <HowItWorksSection />
+      <div className="px-4 flex flex-col gap-12 xl:gap-[200px]">
+        <HeroSection />
+        <AnalyticsSection />
+        <FeaturesSection />
+        <HowItWorksSection />
+      </div>
       <TestimonialSection />
-      <PartnersSection />
-      <FeedBacksSection />
-      <BlogSection />
-      <ContactUs />
-      <FooterSuggestion />
+      <div className="px-4 flex flex-col gap-12 xl:gap-[200px]">
+        <FeedBacksSection />
+        <BlogSection />
+        <ContactUs />
+        <FooterSuggestion />
+      </div>
     </>
   );
 }

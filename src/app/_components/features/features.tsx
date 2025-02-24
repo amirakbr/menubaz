@@ -3,7 +3,7 @@ import FeatureSection from './_components/featureCards/FeatureSection';
 
 const Features = () => {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-12 xl:gap-[200px]">
       <FeatureSection />
       <CallToAction />
     </div>
