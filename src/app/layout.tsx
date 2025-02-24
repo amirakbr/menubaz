@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="fa-IR" dir="rtl">
       <body className={`antialiased container mx-auto ${iranYekan?.className} ${iranYekan?.variable}`}>
         <Header />
-        <main className="flex flex-col gap-16">{children}</main>
+        <main className="flex flex-col gap-16 max-w-[1320px]">{children}</main>
         <Footer />
       </body>
     </html>

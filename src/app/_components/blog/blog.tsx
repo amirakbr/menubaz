@@ -10,7 +10,7 @@ const Blog = () => {
           <HighlightText keyword="منوباز" text="جدیدترین‌های منوباز را ببینید" />
         </p>
         <div className="overflow-auto p-4">
-          <div className="w-max flex item-center justify-start gap-4 ">
+          <div className="flex item-center justify-between whitespace-nowrap">
             <BlogCardContainer />
           </div>
         </div>

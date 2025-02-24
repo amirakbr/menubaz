@@ -17,9 +17,9 @@ export default function Home() {
       <HowItWorksSection />
       <TestimonialSection />
       <PartnersSection />
-      <FooterSuggestion />
       <FeedBacksSection />
       <BlogSection />
+      <FooterSuggestion />
     </>
   );
 }
