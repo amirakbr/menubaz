@@ -44,7 +44,7 @@ const PartnerCategoryCard = ({ selectedTab }: IPartnerCategoryCardProps) => {
               </div>
               <p className="text-orange-600 bg-primary-100 w-max py-1 px-3 rounded-full font-bold">{partnerInfo?.partner?.shopName}</p>
             </div>
-            <div className="xl:w-[232px] xl:h-[232px]order-1 lg:order-2 flex items-center justify-center py-4 lg:!p-10 bg-[#1C8C97] rounded-lg">
+            <div className="xl:w-[232px] xl:h-[232px] order-1 lg:order-2 flex items-center justify-center py-4 lg:!p-10 bg-[#1C8C97] rounded-lg">
               <div className="w-32 h-32">
                 <Image width={90} height={90} className="w-full h-full" alt="partner logo" src={partnerInfo?.logo} />
               </div>

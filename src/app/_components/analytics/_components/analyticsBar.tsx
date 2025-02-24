@@ -15,7 +15,7 @@ const AnalyticsBar = ({ analyticsBarData, feature, setFeature }: IAnalyticsBarPr
           }}
           key={`feature ${name}`}
         >
-          {label}
+          <p className="flex flex-col relative">{label}</p>
         </Button>
       ))}
     </div>

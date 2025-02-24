@@ -20,6 +20,7 @@ export default function Home() {
       </div>
       <TestimonialSection />
       <div className="px-4 flex flex-col gap-12 xl:gap-[200px]">
+        <PartnersSection />
         <FeedBacksSection />
         <BlogSection />
         <ContactUs />

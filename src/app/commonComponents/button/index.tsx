@@ -6,9 +6,9 @@ const Button: React.FC<IButtonProps> = ({ children, size = 'medium', variant = '
   const baseClasses = 'font-bold rounded-lg transition-all focus:ring disabled:opacity-50 disabled:cursor-not-allowed';
 
   const sizeClasses = {
-    small: 'px-3 py-1 text-sm',
+    small: 'px-3 py-1 text-xs',
     medium: 'px-5 py-2 text-base',
-    large: 'px-7 py-3 text-lg',
+    large: 'px-7 py-3 text-base',
   };
 
   const variantStyles = {
@@ -17,7 +17,7 @@ const Button: React.FC<IButtonProps> = ({ children, size = 'medium', variant = '
     ghost: 'border border-yellow-400 text-yellow-400 bg-transparent hover:bg-yellow-100 hover:border-yellow-500',
     danger: 'bg-red-500 text-white hover:bg-red-600 focus:ring-red-300',
     success: 'bg-green-500 text-white hover:bg-green-600 focus:ring-green-300',
-    outline: 'border border-black-100 text-gray-700 bg-transparent hover:border-black hover:text-black',
+    outline: 'border border-white-600 text-gray-700 bg-transparent hover:border-black hover:text-black',
     none: '',
   };
 

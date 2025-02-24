@@ -16,16 +16,18 @@ const Footer = () => {
           </div>
           <FooterLinkContainer />
           <div className="flex sm:flex-row flex-col justify-between gap-1 text-sm p-4">
-            <p>
-              <Link className="text-title font-medium" href={`tel:${tellPhone}`}>
-                {tellPhone}
+            <div className="flex flex-col gap-2">
+              <p>
+                <Link className="text-title font-medium" href={`tel:${tellPhone}`}>
+                  {tellPhone}
+                </Link>
+                <span className="text-title-400 mr-2">شنبه تا پنجشنبه 9 صبح تا 12 شب</span>
+              </p>
+              <Link className="text-complementary" href={`mailto:${email}`}>
+                {email}
               </Link>
-              <span className="text-title-400 mr-2">شنبه تا پنجشنبه 9 صبح تا 12 شب</span>
-            </p>
-            <Link className="text-complementary" href={`mailto:${email}`}>
-              {email}
-            </Link>
-            <address className="text-title-400">{address}</address>
+              <address className="text-title-400">{address}</address>
+            </div>
             <div className="flex flex-col gap-4">
               <p className="text-title">همراه ما باشید!</p>
               <div className="flex items-center gap-2">
