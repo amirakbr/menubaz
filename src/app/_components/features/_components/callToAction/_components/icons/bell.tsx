@@ -1,6 +1,6 @@
 const Bell = () => {
   return (
-    <div className="absolute -right-1 -top-10">
+    <span className="absolute -right-4 -top-12">
       <svg xmlns="http://www.w3.org/2000/svg" width="54" height="49" fill="none" viewBox="0 0 54 49">
         <path
           fill="#FFDE21"
@@ -49,7 +49,7 @@ const Bell = () => {
           d="M39.465 32.064c.85-.059 1.557-.03 2.376.214.13.038.476.105.571.043M38.526 39.052c1.161.67 2.275 1.417 3.438 2.088M7.322 27.976c-1.36-.248-2.695-.215-4.07-.137-.763.043-1.457-.034-2.202-.08M10.232 16.565c-.593-.578-1.23-1.1-1.82-1.67"
         ></path>
       </svg>
-    </div>
+    </span>
   );
 };
 

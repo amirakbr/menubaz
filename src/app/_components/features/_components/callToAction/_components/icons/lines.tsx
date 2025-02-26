@@ -1,6 +1,6 @@
 const Lines = () => {
   return (
-    <div className="absolute -top-5 -left-2">
+    <div className="absolute -top-6 -left-4">
       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" fill="none" viewBox="0 0 23 27">
         <path
           fill="#FFDE21"
