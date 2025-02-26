@@ -2,11 +2,11 @@ import Button from '@/app/commonComponents/button';
 
 const ContactForm = () => {
   return (
-    <div className="xl:max-w-[636px] max-h-[580px] rounded-lg bg-white-200 p-4">
+    <div className="xl:max-w-[636px] max-h-[580px] rounded-lg bg-white-200 p-10">
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-4">
-          <p className="text-xl text-title">مشاوره رایگان</p>
-          <p className="text-sm text-subtitle-400">
+          <p className="text-bse font-semibold xl:text-xl text-title">مشاوره رایگان</p>
+          <p className="text-xs xl:text-sm text-subtitle-400">
             انتخاب یک نرم‌افزار جدید همیشه چالش‌برانگیز بوده؛ ما با افتخار اینجا هستیم تا به شما کمک کنیم بهترین را انتخاب کنید.
           </p>
         </div>

@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <>
       <div className="flex flex-col gap-4">
-        <p className="text-3xl font-bold text-center">
+        <p className="text-2xl xl:text-3xl font-bold text-center">
           <HighlightText keyword="منوباز" text="جدیدترین‌های منوباز را ببینید" />
         </p>
 
