@@ -12,7 +12,48 @@ export const metadata: Metadata = {
 const iranYekan = localFont({
   src: [
     {
-      path: './public/fonts/BYekan.ttf',
+      path: './public/fonts/IRANYekanXFaNum-UltraLight.ttf',
+      weight: '100',
+      style: 'normal',
+    },
+    {
+      path: './public/fonts/IRANYekanXFaNum-Thin.ttf',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: './public/fonts/IRANYekanXFaNum-Light.ttf',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: './public/fonts/IRANYekanXFaNum-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './public/fonts/IRANYekanXFaNum-Medium.ttf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './public/fonts/IRANYekanXFaNum-DemiBold.ttf',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: './public/fonts/IRANYekanXFaNum-Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: './public/fonts/IRANYekanXFaNum-ExtraBold.ttf',
+      weight: '800',
+      style: 'normal',
+    },
+    {
+      path: './public/fonts/IRANYekanXFaNum-Black.ttf',
+      weight: '900',
       style: 'normal',
     },
   ],

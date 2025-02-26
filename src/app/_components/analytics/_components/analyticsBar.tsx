@@ -15,7 +15,7 @@ const AnalyticsBar = ({ analyticsBarData, feature, setFeature }: IAnalyticsBarPr
           }}
           key={`feature ${name}`}
         >
-          <p className="flex flex-col relative">{label}</p>
+          <p className={`flex flex-col relative text-xs xl:text-sm ${feature === name ? 'after:content-[" "] after:w-4 after:border-b after:border-b-primary after:top-[1px] after:relative' : 'text-title-400'}`}>{label}</p>
         </Button>
       ))}
     </div>
