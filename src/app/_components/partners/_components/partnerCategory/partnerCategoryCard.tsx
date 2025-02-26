@@ -13,15 +13,15 @@ const PartnerCategoryCard = ({ selectedTab }: IPartnerCategoryCardProps) => {
       <div className="grid grid-cols-1 lg:grid-cols-[2.2fr_1fr] gap-8">
         <div className="flex flex-col gap-4">
           <div className="col-span-3 flex flex-col gap-3 pt-8 pb-16 bg-white-200 rounded-lg px-4">
-            <h4 className="text-lg font-semibold text-title">{title}</h4>
+            <h4 className="text-sm xl:text-2xl font-bold text-title">{title}</h4>
             {feature?.map(({ description, title }, index) => (
               <div className="flex gap-2" key={`partner feature ${index}`}>
                 <span className="relative top-1 bg-primary rounded-full p-0.5 h-4 w-4 flex items-center justify-center">
                   <TickIcon width={12} height={12} primaryColor="black" />
                 </span>
                 <p className="flex flex-col lg:flex-row gap-2">
-                  <span className="font-semibold">{title}</span>
-                  <span>{description}</span>
+                  <span className="font-semibold text-title">{title}</span>
+                  <span className='text-subtitle !font-bold text-sm'>{description}</span>
                 </p>
               </div>
             ))}
