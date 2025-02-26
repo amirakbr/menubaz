@@ -12,7 +12,7 @@ const Button: React.FC<IButtonProps> = ({ children, size = 'medium', variant = '
   };
 
   const variantStyles = {
-    primary: 'bg-primary text-black hover:bg-yellow-500 focus:ring-primary-300',
+    primary: 'bg-primary text-title hover:bg-yellow-500 focus:ring-primary-300',
     secondary: 'bg-gray text-white border border-black-100 hover:bg-gray-800 focus:ring-gray-400',
     ghost: 'border border-yellow-400 text-yellow-400 bg-transparent hover:bg-yellow-100 hover:border-yellow-500',
     danger: 'bg-red-500 text-white hover:bg-red-600 focus:ring-red-300',

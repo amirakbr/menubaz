@@ -9,10 +9,10 @@ const HowItWorksContent = ({ content, index, title }: Omit<IHowItWorksDataProps,
     <div className={`order-2 md:order-[unset] ${index % 2 === 0 ? '!order-2' : ''}`}>
       <div className="flex flex-col gap-4 max-w-[35rem]">
         <div className="flex flex-col">
-          <span className="text-black-300">{stepIndex}</span>
-          <h4 className="text-lg text-title font-semibold">{title}</h4>
+          <span className="text-gray-300 text-2xl">{stepIndex}</span>
+          <h4 className="text-2xl text-title font-semibold">{title}</h4>
         </div>
-        <p className="text-sm text-subtitle">{content}</p>
+        <p className="text-base text-subtitle">{content}</p>
         <Button className="w-max" size="small" variant="secondary">
           اطلاعات بیشتر
         </Button>
