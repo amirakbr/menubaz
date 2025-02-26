@@ -7,13 +7,13 @@ const FooterSuggestion = () => {
       <div className="flex flex-col gap-16 mt-16">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 text-center lg:text-right items-center">
           <div className="flex flex-col gap-4">
-            <h6 className="text-xl font-semibold text-complementary">همین الان نرم‌افزار خود را فعال کنید!</h6>
-            <p className="lg:max-w-[580px] text-3xl font-bold text-title">
+            <h6 className="text-base font-medium lg:text-xl font-semibold text-complementary">همین الان نرم‌افزار خود را فعال کنید!</h6>
+            <p className="lg:max-w-[580px] text-2xl lg:4xl font-bold text-title">
               تنها با چند کلیک ساده ثبت‌نام کنید و بلافاصله نرم‌افزار خود را فعال نمایید.
             </p>
           </div>
           <div className="flex flex-col gap-4">
-            <p className="text-subtitle lg:max-w-[640px]">
+            <p className="text-subtitle lg:max-w-[640px] text-sm lg:text-base">
               انتخاب نرم‌افزار مناسب برای کسب‌و‌کارتان مهم است. با درخواست دمو از منوباز، به‌راحتی می‌توانید امکانات و ویژگی‌های ما را تجربه کنید شما
               می‌توانید تمامی ابزارهای لازم برای ایجاد یک داشبورد اختصاصی متناسب با رستوران و ویژگی‌های دلخواه خود ایجاد کنید و تصمیم‌گیری آگاهانه‌تری
               داشته باشید.

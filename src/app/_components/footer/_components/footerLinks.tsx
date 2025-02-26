@@ -11,7 +11,7 @@ const FooterLinks = () => {
               {title}
             </p>
             {subLinks?.map(({ link, title }) => (
-              <Link key={`link ${title}`} href={link} className="text-xs sm:text-sm text-subtitle-400 font-normal">
+              <Link key={`link ${title}`} href={link} className="text-xs sm:text-sm text-subtitle-400 font-normal w-max flex flex-col relative after:content-[' '] after:w-full after:border after:border-primary after:absolute after:-right-full after:bottom-0 overflow-hidden hover:after:right-0 after:transition-all">
                 {title}
               </Link>
             ))}

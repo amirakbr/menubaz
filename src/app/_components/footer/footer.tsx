@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="bg-gray">
-          <div className="container mx-auto px-4 py-2 text-xs flex justify-between sm:flex-row flex-col gap-2">
+          <div className="container mx-auto px-4 py-2 text-[0.5rem] flex justify-between sm:flex-row flex-col gap-2">
             <p className="text-subtitle-400">
               کلیه حقوق این سایت متعلق به شرکت بازآفرینان فرا هوشمند کارا (منوباز) می باشد
               <span className="mr-2 text-black-200">ایران - سال 1403</span>
