@@ -1,9 +1,10 @@
 'use client';
 import { Field } from '@base-ui-components/react/field';
 import { Controller, FieldValues } from 'react-hook-form';
-import { IInputProps } from './interface';
+import { TextareaAutosize } from '@mui/base';
+import { IInputProps } from '../input/interface';
 
-const Input = <TData extends FieldValues>({ control, label, name, required = false, direction = 'rtl', type = 'text' }: IInputProps<TData>) => {
+const TextArea = <TData extends FieldValues>({ control, label, name, required = false, direction = 'rtl' }: IInputProps<TData>) => {
   return (
     <>
       <Controller
@@ -19,13 +20,14 @@ const Input = <TData extends FieldValues>({ control, label, name, required = fal
               >
                 {label}
               </Field.Label>
-              <Field.Control
+              <TextareaAutosize
                 onChange={onChange}
                 value={value}
+                maxRows={4}
+                minRows={4}
                 required={required}
-                className={() => 'h-[40px] !outline-0 bg-whiteBlack-100 rounded-lg border border-white-400 text-title'}
+                className={'h-[40px] !outline-0 bg-whiteBlack-100 rounded-lg border border-white-400 text-title !resize-none'}
                 dir={direction}
-                type={type}
               />
               {error?.message ? <Field.Error className={() => 'text-red-500'}>{error?.message}</Field.Error> : null}
             </Field.Root>
@@ -36,4 +38,4 @@ const Input = <TData extends FieldValues>({ control, label, name, required = fal
   );
 };
 
-export default Input;
+export default TextArea;
