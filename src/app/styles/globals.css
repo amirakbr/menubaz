@@ -9,3 +9,11 @@
 .rc-anchor-checkbox-label {
   background-color: rebeccapurple !important;
 }
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}

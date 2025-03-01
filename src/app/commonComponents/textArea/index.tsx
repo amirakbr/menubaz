@@ -15,7 +15,7 @@ const TextArea = <TData extends FieldValues>({ control, label, name, required = 
             <Field.Root className={() => 'flex flex-col gap-1'}>
               <Field.Label
                 className={() => {
-                  return `flex gap-1 text-title-400 ${required ? 'after:block after:content-["*"]' : ''}`;
+                  return `flex gap-1 text-title-400 text-sm font-medium ${required ? 'after:block after:content-["*"]' : ''}`;
                 }}
               >
                 {label}
