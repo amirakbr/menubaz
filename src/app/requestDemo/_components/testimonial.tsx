@@ -22,7 +22,7 @@ const Testimonial = () => {
 						قبل از منوباز، مدیریت رستوران برام یه کابوس بود! سفارش‌ها قاطی می‌شد، حسابداری همیشه عقب می‌افتاد، انبار رو هم که دیگه نگم... اما با منوباز همه چی عوض شد. الان فقط با یه کلیک همه چیز رو
 						تحت کنترل دارم، انگار یه دستیار حرفه‌ای کنارمه!
 					</p>
-					<div className='max-w-[280px] lg:max-w-none grid grid-cols-1 w-full xl:w-max lg:grid-cols-[auto_auto_auto]'>
+					<div className='max-w-[280px] lg:max-w-none grid grid-cols-1 w-full xl:w-max xl:grid-cols-[auto_auto_auto]'>
 						<FeedbackSummaryCard
 							icon={ShoppingCartIcon}
 							subtitle={'حجم سفارشات'}

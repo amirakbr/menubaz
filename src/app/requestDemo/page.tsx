@@ -13,18 +13,20 @@ const RequestDemo = () => {
 		<>
 			<div className='flex flex-col gap-7'>
 				<Header />
-				<div className='flex flex-col gap-3  lg:flex-row'>
-					<div className='flex flex-col gap-3'>
+				<div className='flex flex-col gap-3 xl:flex-row'>
+					<div className='flex flex-col gap-3 shrink-0'>
 						<DataAnalysis />
-						<div className='hidden lg:block'>
+						<div className='hidden xl:block'>
 							<WomanTakingPhone />
 						</div>
 					</div>
-					<RequestDemoForm />
-					<div className='flex flex-col gap-3'>
-						<div className='h-full'> 
-            <ManHoldingLaptop />
-            </div>
+					<div className='w-full'>
+						<RequestDemoForm />
+					</div>
+					<div className='flex flex-col gap-3 shrink-0'>
+						<div className='h-full'>
+							<ManHoldingLaptop />
+						</div>
 						<Partners />
 					</div>
 				</div>

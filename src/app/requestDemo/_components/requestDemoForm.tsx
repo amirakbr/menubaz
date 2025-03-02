@@ -2,14 +2,13 @@
 
 import Button from '@/app/commonComponents/button';
 import Input from '@/app/commonComponents/input/input';
-import Select from '@/app/commonComponents/select';
 import { useForm } from 'react-hook-form';
 
 const RequestDemoForm = () => {
 	const { control } = useForm();
 	return (
-		<div className='bg-white-200 rounded-lg px-3 py-16'>
-			<div>
+		<div className='bg-white-200 rounded-lg px-3 py-16 lg:px-12'>
+			<div className='flex flex-col gap-4'>
 				<h3 className='text-title font-semibold text-xl'>درخواست دمو</h3>
 				<p className='text-subtitle text-sm'>فرم زیر را کامل کنید تا تیم فروش ما در زمان انتخابی با شما تماس بگیرند.</p>
 				<div className='flex flex-col gap-5'>
