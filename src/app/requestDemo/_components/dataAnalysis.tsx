@@ -2,7 +2,7 @@ import DataAnalysisIcon from '@/app/public/icons/dataAnalysisGraphIcon';
 
 const DataAnalysis = () => {
   return (
-    <div className="relative overflow-hidden py-2 px-3 rounded-lg flex items-center justify-center min-h-[228px]">
+    <div className="relative overflow-hidden py-2 px-3 rounded-lg flex items-center justify-center min-h-[228px] lg:min-h-[302px]">
       <div className="z-[5]">
         <DataAnalysisIcon />
       </div>
