@@ -69,7 +69,7 @@ export default function RootLayout({
     <html lang="fa-IR" dir="rtl">
       <body className={`antialiased ${iranYekan?.className} ${iranYekan?.variable} lg:!overflow-auto`}>
         <Header />
-        <main className="flex flex-col gap-12 container mx-auto xl:gap-[200px] max-w-[1320px] m-auto">{children}</main>
+        <main className="mt-10 flex flex-col gap-12 container mx-auto xl:gap-[200px] max-w-[1320px] m-auto">{children}</main>
         <Footer />
       </body>
     </html>
