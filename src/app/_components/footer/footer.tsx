@@ -41,12 +41,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="bg-gray">
-          <div className="container mx-auto px-4 py-2 text-[0.5rem] flex justify-between sm:flex-row flex-col gap-2">
-            <p className="text-subtitle-400">
+          <div className="container mx-auto px-4 py-2 text-[0.5rem] flex justify-between lg:flex-row flex-col gap-2 lg:items-center">
+            <p className="text-subtitle-100 sm:text-base">
               کلیه حقوق این سایت متعلق به شرکت بازآفرینان فرا هوشمند کارا (منوباز) می باشد
-              <span className="mr-2 text-black-200">ایران - سال 1403</span>
+              <span className="mr-2 text-black-200 sm:text-sm">ایران - سال 1403</span>
             </p>
-            <p className="text-white-600">طراحی شده توسط منوباز️</p>
+            <p className="text-white-600 font-medium sm:text-sm">طراحی شده توسط منوباز️</p>
           </div>
         </div>
       </div>

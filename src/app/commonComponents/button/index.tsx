@@ -6,7 +6,7 @@ const Button: React.FC<IButtonProps> = ({ children, size = 'medium', variant = '
   const baseClasses = 'font-bold rounded-lg transition-all focus:ring disabled:opacity-50 disabled:cursor-not-allowed';
 
   const sizeClasses = {
-    small: 'py-3 px-2 text-xs font-medium',
+    small: 'py-2 px-3.5 text-sm font-medium',
     medium: 'px-4 py-3 text-base font-medium',
     large: 'px-5 py-4 text-base font-medium',
   };
@@ -19,8 +19,8 @@ const Button: React.FC<IButtonProps> = ({ children, size = 'medium', variant = '
     success: 'bg-green-500 text-white hover:bg-green-600 focus:ring-green-300',
     outline: 'border border-white-600 text-title-400 bg-transparent hover:border-black hover:text-black',
     none: '',
-  };
-
+  }; 
+  
   return (
     <BTN className={clsx(baseClasses, sizeClasses[size], variantStyles[variant], className)} {...props}>
       {children}
