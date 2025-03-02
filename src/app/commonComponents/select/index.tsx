@@ -1,11 +1,19 @@
 'use client';
 
 import { Controller, FieldValues } from 'react-hook-form';
-import { IInputProps } from './interface';
+import { ISelectProps } from './interface';
 import { Field } from '@base-ui-components/react';
 import { Option, Select as BaseSelect } from '@mui/base';
 
-const Select = <TData extends FieldValues>({ control, label, name, required = false, direction = 'rtl', type = 'text' }: IInputProps<TData>) => {
+const Select = <TData extends FieldValues, TOp extends Object>({
+  control,
+  label,
+  name,
+  required = false,
+  getOption,
+  getValue,
+  options,
+}: ISelectProps<TData, TOp>) => {
   return (
     <>
       <Controller
@@ -26,7 +34,11 @@ const Select = <TData extends FieldValues>({ control, label, name, required = fa
                 onChange={onChange}
                 className="h-[40px] !outline-0 bg-whiteBlack-100 rounded-lg border border-white-400 text-title"
               >
-                <Option value={{ id: 45 }} />
+                {options?.map((props) => (
+                  <Option key={Math.random()} value={getValue(props)}>
+                    {getOption(props)}
+                  </Option>
+                ))}
               </BaseSelect>
               {error?.message ? <Field.Error className={() => 'text-red-500'}>{error?.message}</Field.Error> : null}
             </Field.Root>

@@ -1,6 +1,7 @@
 'use client';
 
 import Input from '@/app/commonComponents/input/input';
+import Select from '@/app/commonComponents/select';
 import { useForm } from 'react-hook-form';
 
 const RequestDemoForm = () => {
@@ -13,7 +14,24 @@ const RequestDemoForm = () => {
         <div className="flex flex-col gap-5">
           <Input label="نام و نام خانوادگی مدیریت" required control={control} name="n" />
           <Input label="نام و نام خانوادگی مدیریت" required control={control} name="n" />
-          
+          <Select
+            label="تست"
+            control={control}
+            options={[{ id: 4 }]}
+            getOption={({ id }) => `${id}`}
+            getValue={({ id }) => `${id}`}
+            required
+            name="test"
+          />
+          <Select
+            label="تست"
+            control={control}
+            options={[{ id: 4 }]}
+            getOption={({ id }) => `${id}`}
+            getValue={({ id }) => `${id}`}
+            required
+            name="test"
+          />
         </div>
       </div>
     </div>
