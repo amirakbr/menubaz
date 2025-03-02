@@ -1,23 +1,38 @@
-"use client";
-import { Field } from "@base-ui-components/react/field";
+'use client';
+import { Field } from '@base-ui-components/react/field';
+import { Controller, FieldValues } from 'react-hook-form';
+import { IInputProps } from './interface';
 
-const Input = () => {
-  return (
-    <>
-      <Field.Root>
-        <Field.Label>Name</Field.Label>
-        <Field.Control
-          onChange={({ target }) => {
-            console.log([target?.value]);
-          }}
-        />
-
-        <Field.Error>Please enter your name</Field.Error>
-
-        <Field.Description>Visible on your profile</Field.Description>
-      </Field.Root>
-    </>
-  );
+const Input = <TData extends FieldValues>({ control, label, name, required = false, direction = 'rtl', type = 'text' }: IInputProps<TData>) => {
+	return (
+		<>
+			<Controller
+				control={control}
+				name={name}
+				render={({ field: { onChange, value }, fieldState: { error, invalid } }) => {
+					return (
+						<Field.Root className={() => 'flex flex-col gap-1'}>
+							<Field.Label
+								className={() => {
+									return `flex gap-1 text-title-400 text-sm font-medium	 ${required ? 'after:block after:content-["*"]' : ''}`;
+								}}>
+								{label}
+							</Field.Label>
+							<Field.Control
+								onChange={onChange}
+								value={value}
+								required={required}
+								className={() => 'h-[40px] !outline-0 bg-whiteBlack-100 rounded-lg border border-white-400 text-title'}
+								dir={direction}
+								type={type}
+							/>
+							{error?.message ? <Field.Error className={() => 'text-red-500'}>{error?.message}</Field.Error> : null}
+						</Field.Root>
+					);
+				}}
+			/>
+		</>
+	);
 };
 
 export default Input;

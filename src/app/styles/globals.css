@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-input , select {
-    @apply w-full h-8 border border-white-400 bg-whiteBlack-100 rounded-lg
+.ruby {
+  display: ruby;
 }
 
-.ruby {
-    display: ruby;
+.rc-anchor-checkbox-label {
+  background-color: rebeccapurple !important;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
 }
