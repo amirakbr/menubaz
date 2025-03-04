@@ -50,8 +50,8 @@ const OurValues = () => {
               </p>
               <p className="text-subtitle text-base">{description}</p>
             </div>
-            <div className={`overflow-hidden rounded-lg w-max justify-self-center ${index % 1 === 0 ? 'md:order-1' : 'md:order-2'}`}>
-              <Image src={imageSrc} width={380} height={254} className="rounded-lg object-cover object-center" alt={imageSrc} />
+            <div className={`overflow-hidden rounded-lg justify-self-center ${index % 1 === 0 ? 'md:order-1' : 'md:order-2'} h-[179px] w-full max-w-[382px] md:h-[254px] relative`}>
+              <Image src={imageSrc} className="rounded-lg object-cover object-center" alt={imageSrc} fill sizes='' />
             </div>
           </div>
         ))}

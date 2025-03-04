@@ -32,11 +32,11 @@ const historyTimeLine = [
 
 const HistoryTimeLine = () => {
 	return (
-		<div className='flex flex-col'>
+		<div className='flex flex-col items-center'>
 			{historyTimeLine?.map(({ date, icon: Icon, summary }, index) => {
 				return (
 					<div
-						className='flex flex-col'
+						className='flex flex-col max-w-96'
 						key={`history timeline card ${index}`}>
 						<div className='h-32 relative'>
 							<div className='absolute top-0 h-full left-1/2 -translate-x-1/2 border-l border-dashed'></div>
