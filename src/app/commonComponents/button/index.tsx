@@ -6,7 +6,7 @@ const Button: React.FC<IButtonProps> = ({ children, size = 'medium', variant = '
   const baseClasses = 'font-bold rounded-lg transition-all focus:ring disabled:opacity-50 disabled:cursor-not-allowed';
 
   const sizeClasses = {
-    small: 'py-2 px-3.5 text-sm font-medium',
+    small: 'py-1 md:py-2 px-3 md:px-3.5 text-xs md:text-sm font-medium',
     medium: 'px-4 py-3 text-base font-medium',
     large: 'px-5 py-4 text-base font-medium',
   };

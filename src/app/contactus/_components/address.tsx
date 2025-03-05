@@ -9,7 +9,7 @@ const Address = () => {
 				<div className='w-4 h-4 rounded-full left-[80%] top-[10%] absolute'>
 					<LocationIcon />
 				</div>
-				<div className='flex flex-col gap-2 px-5 py-7 bg-gradient-to-t from-[#FFFFFF] to-transparent from-[40%]'>
+				<div className='flex flex-col gap-2 px-5 py-7 bg-gradient-to-b from-[#FFFFFF20] to-[#FFFFFF]'>
 					<p className='text-2xl font-bold'>آدرس</p>
 					<div className='flex items-center justify-between gap-4'>
 						<address className='text-title-400'>{address}</address>
