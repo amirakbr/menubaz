@@ -119,7 +119,8 @@ const CategoryList = () => {
 				<Link
 					key={`category list ${index}`}
 					href={route}
-					about={name}>
+					about={name}
+					className={`${index % 2 === 1 ? 'md:border-r md:border-r-gray-100' : ''}`}>
 					<div
 						className={`flex items-center rounded-xl p-8 justify-between gap-2 ${additionalClassname ? additionalClassname : 'bg-white-200'} `}
 						key={`category list ${index}`}>
