@@ -12,13 +12,12 @@ const Layout = ({ children }: { children: ReactNode }) => {
         <div className="flex items-start justify-between gap-20">
           <div className="flex flex-col gap-3 hidden lg:flex shrink-0">
             <p className="text-sm text-title">موارد قانونی</p>
-            <p className="text-title font-bold text-sm">قوانین شرایط استفاده</p>
-            <p className="text-sm text-title-300">حریم خصوصی</p>
+            <p className="text-title-300 text-sm">قوانین شرایط استفاده</p>
+            <p className="text-sm text-title font-bold">حریم خصوصی</p>
           </div>
           {children}
         </div>
       </div>
-
       <div className="flex flex-col gap-10">
         <p className="text-title text-3xl font-bold text-center">راه های ارتباطی</p>
         <div className="grid gird-cols-1 grid-rows-3 md:grid-rows-[auto] md:grid-cols-2 xl:grid-cols-3 gap-3">
