@@ -161,6 +161,7 @@ export default {
 				marqueeReverse: 'marqueeReverse 20s linear infinite',
 				appear: 'appear 0.5s linear',
 				moveLeft: 'moveLeft 0.1s linear',
+				radar: 'radar 5s linear infinite',
 			},
 			keyframes: {
 				marquee: {
@@ -178,6 +179,11 @@ export default {
 				moveLeft: {
 					from: { left: '100%' },
 					to: { left: '0%' },
+				},
+				radar: {
+					'0%': { height: '0%', width: '0%', opacity: '1' },
+					
+					'100%': { height: '110%', width: '110%', opacity: '0.4' },
 				},
 			},
 			fontFamily: {

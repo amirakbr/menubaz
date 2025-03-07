@@ -11,7 +11,7 @@ const Footer = () => {
           <div className=" flex items-center justify-between font-normal p-4">
             <div className="flex flex-col gap-1">
               <LargeLogo width={147} height={21} />
-              <p className="text-sm font-medium">منوباز، پلتفرم مدیریت سفارش گیری و پرداخت</p>
+              <p className="text-sm font-medium sm:hidden">منوباز، پلتفرم مدیریت سفارش گیری و پرداخت</p>
             </div>
           </div>
           <FooterLinkContainer />
