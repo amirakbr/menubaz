@@ -4,7 +4,7 @@ import Lines from "./icons/lines";
 const FeatureDescription = () => {
   return (
     <div className="relative text-center flex flex-col justify-center gap-14 bg-white-200 rounded-lg py-8 px-4">
-      <div className="relative">
+      <div className="relative max-w-80 mx-auto">
         <h4 className="text-xl text-title font-semibold">
           وقتی که امکانات دقیقا با نیازهای{" "}
           <span className="relative">

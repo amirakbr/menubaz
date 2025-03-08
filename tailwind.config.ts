@@ -162,6 +162,10 @@ export default {
 				appear: 'appear 0.5s linear',
 				moveLeft: 'moveLeft 0.1s linear',
 				radar: 'radar 5s linear infinite',
+
+				// benefits section animation
+				filledLine: 'filledLine 10s linear infinite',
+				filledHeight: 'filledHeight 10s linear infinite',
 			},
 			keyframes: {
 				marquee: {
@@ -182,8 +186,20 @@ export default {
 				},
 				radar: {
 					'0%': { height: '0%', width: '0%', opacity: '1' },
-					
+
 					'100%': { height: '110%', width: '110%', opacity: '0.4' },
+				},
+				filledLine: {
+					from: { width: '0%' },
+					to: { width: '100%' },
+				},
+				filledHeight: {
+					from: { height: '0%' },
+					to: { height: '100%' },
+				},
+				secondDot: {
+					from: { background: '#F5F5F5' },
+					to: { background: '#FFDE21' },
 				},
 			},
 			fontFamily: {
@@ -192,6 +208,12 @@ export default {
 			dropShadow: {
 				100: '0px 4px 16px rgba(34, 34, 34, 0.08)',
 				primary: '0px 5.94px 15.83px rgba(255, 222, 33, 0.2)',
+				userInterfaceDesignCard: '-2px 4px 40px rgba(0, 0, 0, 0.08)',
+			},
+			fontSize: {
+				6: '6px',
+				8: '8px',
+				10: '10px',
 			},
 		},
 	},
