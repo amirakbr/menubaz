@@ -21,7 +21,9 @@ const Card = ({ data, selectedTabIndex, tabIndex }: IBenefitsCardProps) => {
 			)}
 
 			<div
-				className='flex flex-col gap-6 animate-appear lg:animate-[unset] lg:order-1 max-w-[670px]'
+				className={`flex flex-col gap-6 animate-appear lg:animate-[unset] lg:order-1 max-w-[670px] transition-all ${
+					tabIndex === 1 ? (selectedTabIndex === tabIndex ? 'opacity-[1]' : 'opacity-[0.6]') : ''
+				}`}
 				key={`selected tab index for beneficiary card ${selectedTabIndex}`}>
 				<div className='flex flex-col gap-3'>
 					<p className='text-2xl font-semibold text-title'>{title}</p>

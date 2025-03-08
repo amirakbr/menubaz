@@ -14,7 +14,7 @@ const HowItWorksContent = ({ content, index, title }: Omit<IHowItWorksDataProps,
         </div>
         <p className="text-base text-subtitle">{content}</p>
         <Button className="w-max" size="small" variant="secondary">
-          اطلاعات بیشتر
+        کسب اطلاعات بیشتر
         </Button>
       </div>
     </div>
