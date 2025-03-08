@@ -7,7 +7,7 @@ import MobileMenu from './mobileMenu';
 
 const Header = () => {
   return (
-    <header className="p-4 container mx-auto">
+    <header className="p-4 container mx-auto sticky top-0 bg-whiteBlack-100 z-[+100000]">
       <div className="flex items-center justify-between gap-4 hidden lg:flex">
         <div className="flex items-center gap-12">
           <div className="flex items-center gap-2">

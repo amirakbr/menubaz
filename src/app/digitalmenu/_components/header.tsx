@@ -25,7 +25,7 @@ const Divider = () => {
 
 const Header = () => {
   return (
-    <div className="flex flex-col gap-10 items-center">
+    <div className="flex flex-col gap-10 items-center max-w-[812px] mx-auto">
       <div className="flex flex-col gap-4 text-center items-center">
         <h1 className="text-title text-2xl font-bold">منو دیجیتال</h1>
         <h2 className='text-xl text-subtitle-400'>راهکاری برای تمامی نیازهای رستوران شما!</h2>
@@ -35,7 +35,7 @@ const Header = () => {
           آنان اجازه میدهد تا از طریق تلفن همراه خود و بدون نیاز به دانلود هیچ برنامه ای، آیتم های منو را مرور کرده و سفارش دلخواه خود را ثبت کنند.
         </h3>
       </div>
-      <div className="bg-white-200 border border-white-300 py-7 w-full flex items-center justify-center rounded-xl">
+      <div className="bg-white-200 border border-white-300 py-7 w-full flex items-center justify-center rounded-xl lg:px-2">
         <div className="w-max grid grid-cols-[1fr_auto_1fr] md:grid-cols-[1fr_auto_1fr_auto_1fr_auto_1fr] gap-4 items-center">
           <Card icon={<MonitOirMobileIcon secondaryColor="#828282" height={44} width={44} />} label={'اسکن'} />
           <Divider />

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const BenefitsOfUse = () => {
   return (
-    <div className="flex flex-col items-center text-center gap-8">
+    <div className="flex flex-col items-center text-center gap-8 max-w-[839px] mx-auto">
       <div className="flex flex-col gap-4">
         <p className="text-title font-bold text-2xl">مزایای استفاده</p>
         <p className="text-xl text-semibold text-subtitle-400">بیشترین امکانات با کمترین هزینه؛ حتی رایگان!</p>
@@ -13,8 +13,8 @@ const BenefitsOfUse = () => {
           شما، تنها گوشه ای از مزایای استفاده از منو دیجیتال است.
         </p>
       </div>
-      <div className="relative w-full h-40 bg-[url(/digitalMenu/benefitsChart.webp)] bg-contain bg-no-repeat bg-center"></div>
-      <Button variant="secondary" className='w-full'>کسب اطلاعات بیشتر</Button>
+      <div className="relative w-full h-40 lg:h-64 bg-[url(/digitalMenu/benefitsChart.webp)] bg-contain bg-no-repeat bg-center"></div>
+      <Button variant="secondary" className='w-full lg:w-max'>کسب اطلاعات بیشتر</Button>
     </div>
   );
 };
