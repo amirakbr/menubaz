@@ -33,7 +33,7 @@ const FAQ = () => {
 			</p>
 			<Accordion.Root
 				dir='rtl'
-				className={() => 'flex flex-col gap-2 w-[960px]'}>
+				className={() => 'flex flex-col gap-2 xl:w-[960px]'}>
 				{faqQuestion?.map(({ answer, question }) => (
 					<Accordion.Item
 						className={({ open }) => {

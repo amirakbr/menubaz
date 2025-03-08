@@ -36,7 +36,7 @@ const Benefits = () => {
 	}, [selectedTabIndex]);
 
 	return (
-		<div className='flex flex-col items-center gap-8 lg:flex-row lg:grid lg:grid-cols-[4rem_1fr]'>
+		<div className='flex flex-col items-center gap-8 lg:flex-row lg:grid lg:grid-cols-[2rem_1fr]'>
 			<>
 				<div className='relative lg:w-2 lg:h-full'>
         <HorizontalTab selectedTabIndex={selectedTabIndex} />
@@ -47,7 +47,7 @@ const Benefits = () => {
 						selectedTabIndex={selectedTabIndex}
 					/>
 				</div>
-				<div className='flex flex-col gap-4'>
+				<div className='hidden lg:flex flex-col gap-16'>
 					<Card
 						data={benefitsData[0]}
 						selectedTabIndex={selectedTabIndex}
