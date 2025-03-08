@@ -3,7 +3,7 @@ import { Field } from '@base-ui-components/react/field';
 import { Controller, FieldValues } from 'react-hook-form';
 import { IInputProps } from './interface';
 
-const Input = <TData extends FieldValues>({ control, label, name, required = false, direction = 'rtl', type = 'text' }: IInputProps<TData>) => {
+const Input = <TData extends FieldValues>({ control, label, name, required = false, direction = 'rtl', type = 'text', placeholder = '', inputClassName = '' }: IInputProps<TData>) => {
 	return (
 		<>
 			<Controller
@@ -12,19 +12,22 @@ const Input = <TData extends FieldValues>({ control, label, name, required = fal
 				render={({ field: { onChange, value }, fieldState: { error, invalid } }) => {
 					return (
 						<Field.Root className={() => 'flex flex-col gap-1'}>
-							<Field.Label
-								className={() => {
-									return `flex gap-1 text-title-400 text-sm font-medium	 ${required ? 'after:block after:content-["*"]' : ''}`;
-								}}>
-								{label}
-							</Field.Label>
+							{label ? (
+								<Field.Label
+									className={() => {
+										return `flex gap-1 text-title-400 text-sm font-medium	 ${required ? 'after:block after:content-["*"]' : ''}`;
+									}}>
+									{label}
+								</Field.Label>
+							) : null}
 							<Field.Control
 								onChange={onChange}
 								value={value}
 								required={required}
-								className={() => 'h-[40px] !outline-0 bg-whiteBlack-100 rounded-lg border border-white-400 text-title'}
+								className={() => `h-[40px] px-4 !outline-0 bg-whiteBlack-100 rounded-lg border border-white-400 text-title ${inputClassName}`}
 								dir={direction}
 								type={type}
+								placeholder={placeholder}
 							/>
 							{error?.message ? <Field.Error className={() => 'text-red-500'}>{error?.message}</Field.Error> : null}
 						</Field.Root>

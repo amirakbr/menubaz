@@ -123,17 +123,17 @@ const FooterLinkData = [
 
 const FooterLicenseData = [
   {
-    imageSrc: './license/anjoman.svg',
+    imageSrc: '/license/anjoman.svg',
     alt: 'anjoman',
     link: '',
   },
   {
-    imageSrc: './license/samandehi.svg',
+    imageSrc: '/license/samandehi.svg',
     alt: 'samandehi',
     link: '',
   },
   {
-    imageSrc: './license/enamad.svg',
+    imageSrc: '/license/enamad.svg',
     alt: 'enamad',
     link: '',
   },
