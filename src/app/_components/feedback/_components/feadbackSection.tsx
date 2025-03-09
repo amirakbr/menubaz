@@ -8,7 +8,7 @@ const FeedbacksSection = () => {
   const fourthColumn = commentData.filter((_, index) => index % 4 === 3);
 
   return (
-    <>
+    <div className='w-full relative'>
       <div className="flex flex-no-wrap sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-h-[822px] relative overflow-scroll sm:overflow-hidden p-7">
         <div className="flex flex-no-wrap sm:grid gap-3 h-max">
           {firstColumn?.map(({ avatar, comment, owner, shopName }, index) => (
@@ -32,7 +32,8 @@ const FeedbacksSection = () => {
         </div>
         <div className="hidden sm:block absolute z-5 bottom-0 left-0 w-full h-72 bg-gradient-to-t from-[white] to-transparent"></div>
       </div>
-    </>
+      <div className="block sm:hidden absolute z-5 bottom-0 left-0 h-full w-16 bg-gradient-to-r from-[white] to-transparent"></div>
+    </div>
   );
 };
 
