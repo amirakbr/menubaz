@@ -166,7 +166,7 @@ const CompareTable = () => {
     <>
       <div className="p-4">
         <div className="overflow-x-auto">
-          <table>
+          <table className='mx-auto'>
             <thead className='after:content-[" "] after:block after:h-4 after:w-full after:bg-transparent'>
               <tr>
                 <th className="p-2">
