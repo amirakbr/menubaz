@@ -9,47 +9,47 @@ import FeedbacksSection from '@/app/_components/feedback/_components/feadbackSec
 const Testimonial = () => {
   return (
     <div className="flex flex-col gap-8 items-center">
-      <div className="flex gap-7">
-        <div className="h-auto flex flex-col gap-7 items-center justify-center border border-white-600 rounded-xl p-16">
-          <p className="text-xl font-medium flex gap-0.5">
+      <div className="flex flex-col md:flex-row gap-7">
+        <div className="h-auto flex flex-col gap-7 items-center justify-center border border-white-600 rounded-xl p-4 xl:p-16">
+          <p className="text-base xl:text-xl font-medium flex gap-0.5">
             <span className="text-complementary">1000+</span>
             کسب و کار از
             <span className="text-complementary">50+</span>
             شهر به منوباز اعتماد کرده‌اند
           </p>
-          <div className='flex flex-col gap-2 items-center'>
-          <div className="flex gap-2 items-center">
-            {businessPartners?.map(({ imageSrc }) => {
-              return (
-                <Image
-                  src={imageSrc}
-                  alt={`${imageSrc} partner business logo`}
-                  key={`${imageSrc} partner business logo`}
-                  height={48}
-                  width={48}
-                  className="rounded-full"
-                />
-              );
-            })}
-          </div>
-          <div className="flex gap-2 items-center">
-            {businessPartners?.map(({ imageSrc }) => {
-              return (
-                <Image
-                  src={imageSrc}
-                  alt={`${imageSrc} partner business logo`}
-                  key={`${imageSrc} partner business logo`}
-                  height={48}
-                  width={48}
-                  className="rounded-full"
-                />
-              );
-            })}
-          </div>
+          <div className="flex flex-col gap-2 items-center">
+            <div className="flex gap-2 items-center">
+              {businessPartners?.map(({ imageSrc }) => {
+                return (
+                  <Image
+                    src={imageSrc}
+                    alt={`${imageSrc} partner business logo`}
+                    key={`${imageSrc} partner business logo`}
+                    height={48}
+                    width={48}
+                    className="rounded-full"
+                  />
+                );
+              })}
+            </div>
+            <div className="flex gap-2 items-center">
+              {businessPartners?.map(({ imageSrc }) => {
+                return (
+                  <Image
+                    src={imageSrc}
+                    alt={`${imageSrc} partner business logo`}
+                    key={`${imageSrc} partner business logo`}
+                    height={48}
+                    width={48}
+                    className="rounded-full"
+                  />
+                );
+              })}
+            </div>
           </div>
         </div>
-        <div className="relative w-[265px] h-[268px] rounded-xl overflow-hidden">
-          <Image fill alt="handshake image" src={'/speceficComparsion/handshake.png'} />
+        <div className="relative w-full h-[185px] md:w-[265px] md:h-[268px] rounded-xl overflow-hidden">
+          <Image fill alt="handshake image" src={'/speceficComparsion/handshake.png'} className='object-cover object-center'/>
         </div>
       </div>
       <div className="grid grid-cols-1 w-full xl:w-max xl:grid-cols-[auto_auto_auto] gap-3">
@@ -57,7 +57,9 @@ const Testimonial = () => {
         <FeedbackSummaryCard icon={GraphIcon} subtitle={'در هزینه‌های جاری'} summary={'۳۷%'} title={'صرفه جویی'} />
         <FeedbackSummaryCard icon={ClockIcon} subtitle={'زمان تحویل سفارش'} summary={'۱۵ دقیقه‌ای'} title={'کاهش'} />
       </div>
-      <FeedbacksSection />
+      <div className="w-full">
+        <FeedbacksSection />
+      </div>
     </div>
   );
 };

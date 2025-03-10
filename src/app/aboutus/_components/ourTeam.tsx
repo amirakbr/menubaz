@@ -59,7 +59,7 @@ const OurTeam = () => {
             ))}
           </div>
         </div>
-        <div className="absolute left-0 top-0 h-full w-20 xl:w-52 bg-gradient-to-r from-[#FFFFFF] from-[60%] to-[rgba(255, 255, 255, 0.8)]"></div>
+        <div className="absolute left-0 top-0 h-full w-20 xl:w-52 bg-gradient-to-r from-[#ffffffcc] from-[60%] to-[rgba(255, 255, 255, 0.8)]"></div>
       </div>
     </div>
   );

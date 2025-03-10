@@ -50,7 +50,7 @@ const Businesses = () => {
             </div>
           ))}
         </div>
-        <div className="absolute -left-1 top-0 h-full w-20 xl:w-52 bg-gradient-to-r from-[#ffffff] to-[#ffffff00]"></div>
+        <div className="absolute -left-1 top-0 h-full w-20 xl:w-52 bg-gradient-to-r from-[#ffffffcc] to-[#ffffff00]"></div>
       </div>
     </div>
   );
