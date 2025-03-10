@@ -29,6 +29,7 @@ export interface IPackagesData {
   featureTitle: string;
   feature: {
     label: string;
+    hadMoreInfo?: boolean;
   }[];
 }
 

@@ -3,7 +3,7 @@ import { packageComparison } from './packageData';
 import { IPackageComparisonDetailContainerProps } from '../interface';
 import TickIcon from '@/app/public/icons/tick';
 import CloseCircle from '@/app/public/icons/closeCircle';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Button from '@/app/commonComponents/button';
 
 const FeatureAvailable = ({ value }: { value: boolean }) => (
@@ -32,7 +32,7 @@ const PackageComparisonDetailContainer = ({ isWidthLarger, selectedPackage }: IP
           <PackageComparisonDetail isDefaultOpen={true} title="منوی دیجیتال">
             <div className="grid grid-cols-[auto_1fr]">
               {packageComparison?.digitalMenu?.map(({ baseMenu, feature, proMenu, standardMenu, visualMenu }, index) => (
-                <>
+                <React.Fragment key={`package comparison for digital menu ${index}`}>
                   <p
                     className={`text-sm xl:text-base text-subtitle font-medium shrink-0 min-w-20 p-3 xl:py-4 xl:px-2 ${
                       isWidthLarger ? '!pl-20' : 'pr-2'
@@ -50,14 +50,14 @@ const PackageComparisonDetailContainer = ({ isWidthLarger, selectedPackage }: IP
                     {renderFeature(isWidthLarger, standardMenu, selectedPackage?.name, 'standardMenu')}
                     {renderFeature(isWidthLarger, proMenu, selectedPackage?.name, 'proMenu')}
                   </div>
-                </>
+                </React.Fragment>
               ))}
             </div>
           </PackageComparisonDetail>
           <PackageComparisonDetail isDefaultOpen={false} title="سفارش گیر">
             <div className="grid grid-cols-[auto_1fr]">
-              {packageComparison?.digitalMenu?.map(({ baseMenu, feature, proMenu, standardMenu, visualMenu }, index) => (
-                <>
+              {packageComparison?.ordering?.map(({ baseMenu, feature, proMenu, standardMenu, visualMenu }, index) => (
+                <React.Fragment key={`package comparison for ordering ${index}`}>
                   <p
                     className={`text-sm xl:text-base text-subtitle font-medium shrink-0 min-w-20 p-3 xl:py-4 xl:px-2 ${
                       isWidthLarger ? '!pl-20' : 'pr-2'
@@ -75,7 +75,7 @@ const PackageComparisonDetailContainer = ({ isWidthLarger, selectedPackage }: IP
                     {renderFeature(isWidthLarger, standardMenu, selectedPackage?.name, 'standardMenu')}
                     {renderFeature(isWidthLarger, proMenu, selectedPackage?.name, 'proMenu')}
                   </div>
-                </>
+                </React.Fragment>
               ))}
             </div>
           </PackageComparisonDetail>

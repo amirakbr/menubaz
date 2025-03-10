@@ -13,7 +13,7 @@ const CallCenter = () => {
 						<p className='text-base font-medium text-title-400'>تلفن گویا</p>
 						<Link
 							href={`tel:${tellPhone}`}
-							className='text-complementary underline font-medium text-lg ltr'>
+							className='text-complementary font-medium text-lg ltr'>
 							{tellPhone}
 						</Link>
 					</div>
@@ -21,7 +21,7 @@ const CallCenter = () => {
 						<p className='text-base font-medium text-title-400'>شماره همراه</p>
 						<Link
 							href='tel:09926070508'
-							className='text-complementary underline font-medium text-lg ltr'>
+							className='text-complementary font-medium text-lg ltr'>
 							0992 607 0508
 						</Link>
 					</div>

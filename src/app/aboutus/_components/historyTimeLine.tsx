@@ -47,7 +47,7 @@ const HistoryTimeLine = () => {
                 } rounded-full bg-[#FFFFFF] border border-black-300 hover:bg-primary group transition-all w-12 h-12 hover:w-16 hover:h-16 xl:w-16 xl:h-16 flex items-center justify-center`}
               >
                 <div className="w-7 h-7 group-hover:w-8 group-hover:h-8 xl:w-8 xl:h-8 text-gray-400 group-hover:text-gray-600 transition-all">
-                  <Icon width={'inherit'} height={'inherit'} primaryColor="currentColor" />
+                  <Icon width={'inherit'} height={'inherit'} primaryColor="currentColor" secondaryColor="currentColor" />
                 </div>
               </div>
             </div>

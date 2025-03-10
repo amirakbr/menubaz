@@ -41,8 +41,8 @@ const Businesses = () => {
       </div>
       <div className="w-full relative">
         <div className="flex items-center gap-4 whitespace-nowrap overflow-auto pb-8 relative">
-          {BusinessCategory?.map(({ imageSrc, title }) => (
-            <div className="min-w-[259px] relative rounded-lg flex flex-col gap-4">
+          {BusinessCategory?.map(({ imageSrc, title }, index) => (
+            <div className="min-w-[259px] relative rounded-lg flex flex-col gap-4" key={`business category ${index}`}>
               <div className="overflow-hidden rounded-xl w-[248px] h-[232px] relative">
                 <Image alt={imageSrc} src={imageSrc} fill />
               </div>

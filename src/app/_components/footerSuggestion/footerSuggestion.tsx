@@ -5,10 +5,10 @@ const FooterSuggestion = () => {
   return (
     <>
       <div className="flex flex-col gap-16 mt-16">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 text-center lg:text-right items-center">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 text-center lg:text-right items-start">
           <div className="flex flex-col gap-4">
             <h6 className="text-base font-medium lg:text-xl font-semibold text-complementary">همین الان نرم‌افزار خود را فعال کنید!</h6>
-            <p className="lg:max-w-[580px] text-2xl lg:4xl font-bold text-title">
+            <p className="lg:max-w-[580px] text-2xl lg:text-4xl font-bold text-title">
               تنها با چند کلیک ساده ثبت‌نام کنید و بلافاصله نرم‌افزار خود را فعال نمایید.
             </p>
           </div>
@@ -20,7 +20,7 @@ const FooterSuggestion = () => {
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-4 w-max mx-auto lg:m-0">
               <Button size="small" variant="secondary">
-                ثبت نام و دریافت فوری
+                شروع ثبت نام
               </Button>
               <Button size="small" variant="outline" className="border-gray">
                 درخواست دمو

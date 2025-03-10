@@ -1,4 +1,5 @@
 import CloseIcon from '@/app/public/icons/closeIcon';
+import InfoIcon from '@/app/public/icons/info';
 import TickIcon from '@/app/public/icons/tick';
 import Logo from '@/app/public/logo/logo';
 
@@ -166,7 +167,7 @@ const CompareTable = () => {
     <>
       <div className="p-4">
         <div className="overflow-x-auto">
-          <table className='mx-auto'>
+          <table className="mx-auto">
             <thead className='after:content-[" "] after:block after:h-4 after:w-full after:bg-transparent'>
               <tr>
                 <th className="p-2">
@@ -182,7 +183,13 @@ const CompareTable = () => {
             <tbody>
               {data.map((item, index) => (
                 <tr key={index} className={`h-14 rounded-xl [&>*:first-child]:rounded-r-xl [&>*:last-child]:rounded-l-xl `}>
-                  <td className={`p-2 px-4 text-base font-medium text-title ${index % 2 === 0 ? 'bg-white-300' : ''}`}>{item.feature}</td>
+                  <td className={`p-2 px-4 text-base font-medium text-title ${index % 2 === 0 ? 'bg-white-300' : ''}`}>
+                    <div className="flex items-center justify-between gap-4">
+                      {item.feature}
+
+                      <InfoIcon />
+                    </div>
+                  </td>
                   {[item.menubaz, item.sepidz, item.baran, item.mayra, item.mahak].map((value, idx) => (
                     <td key={idx} className={`p-2 w-40 text-center ${index % 2 === 0 ? 'bg-white-300' : ''}`}>
                       <div className="flex items-center justify-center">
@@ -203,7 +210,6 @@ const CompareTable = () => {
             </tbody>
           </table>
         </div>
-        <div className="mt-4 text-center">{/* <Button className="bg-yellow-500 text-white">بیشتر بدانید</Button> */}</div>
       </div>
     </>
   );

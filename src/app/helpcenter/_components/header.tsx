@@ -1,4 +1,3 @@
-import Input from '@/app/commonComponents/input/input';
 import MinimalLogo from '@/app/public/logo/minimalLog';
 import SearchField from './searchField';
 

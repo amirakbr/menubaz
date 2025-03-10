@@ -15,7 +15,7 @@ const CardDigitalBranch = () => {
         </div>
         <div className="flex items-center gap-3">
           <Button variant="secondary">کسب اطلاعات بیشتر</Button>
-          <p className="text-complementary font-medium">برند خودتو بساز!</p>
+          <p className="text-complementary font-medium rounded-lg border border-complementary p-1 px-2">برند خودتو بساز!</p>
         </div>
       </div>
       <div className="flex justify-center items-end">

@@ -41,13 +41,13 @@ const FAQ = () => {
                   return `w-full flex items-center justify-between ${open ? '[&>div]:rotate-180 [&>div]:bg-white-600 ' : ''}`;
                 }}
               >
-                <p className="py-2 px-3 text-xs text-start font-semibold text-title">{question}</p>
+                <p className="py-2 px-3 text-xs lg:text-xl text-start font-semibold text-title">{question}</p>
                 <div className={`transition-all w-6 h-6 rounded-full shrink-0 flex items-center justify-center`}>
-                  <ArrowDownIcon width={12} height={12} />
+                  <ArrowDownIcon width={12} height={12} primaryColor='white'/>
                 </div>
               </Accordion.Trigger>
             </Accordion.Header>
-            <Accordion.Panel className={() => 'p-2 text-subtitle text-sm'}>{answer}</Accordion.Panel>
+            <Accordion.Panel className={() => 'p-2 text-subtitle text-sm lg:text-xl'}>{answer}</Accordion.Panel>
           </Accordion.Item>
         ))}
       </Accordion.Root>

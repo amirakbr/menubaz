@@ -10,7 +10,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <div className="flex flex-col gap-10 lg:gap-12 w-full">
         <Header />
         <div className="flex items-start justify-between gap-20">
-          <div className="flex flex-col gap-3 hidden lg:flex shrink-0">
+          <div className="flex flex-col gap-3 hidden lg:flex shrink-0 sticky top-16">
             <p className="text-sm text-title">موارد قانونی</p>
             <p className="text-title-300 text-sm">قوانین شرایط استفاده</p>
             <p className="text-sm text-title font-bold">حریم خصوصی</p>

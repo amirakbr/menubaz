@@ -26,7 +26,7 @@ const servicesData = [
 
 const Services = () => {
 	return (
-		<div className='flex flex-col gap-5 lg:gap-10'>
+		<div className='flex flex-col gap-5 lg:gap-10 lg:gap-16'>
 			{servicesData?.map(({ description, imageSrc, subtitle, title }, index) => (
 				<div
 					className='grid grid-cols-1 gap-8 lg:justify-between lg:items-center lg:grid-cols-[auto_auto]'

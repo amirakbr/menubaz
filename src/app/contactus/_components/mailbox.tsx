@@ -13,7 +13,7 @@ const Mailbox = () => {
 							<p className='text-base font-medium text-title-400'>پشتیبانی</p>
 							<Link
 								href='mailto:support@menobuzz.com'
-								className='text-complementary underline font-medium text-base'>
+								className='text-complementary font-medium text-base'>
 								support@menobuzz.com
 							</Link>
 						</div>
@@ -21,7 +21,7 @@ const Mailbox = () => {
 							<p className='text-base font-medium text-title-400'>فروش</p>
 							<Link
 								href='mailto:sales@menobuzz.com'
-								className='text-complementary underline font-medium text-lg'>
+								className='text-complementary font-medium text-lg'>
 								sales@menobuzz.com
 							</Link>
 						</div>

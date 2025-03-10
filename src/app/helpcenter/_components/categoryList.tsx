@@ -66,7 +66,7 @@ export const categoryData: ICategoryData[] = [
 		Icon: UserSearchIcon,
 		articleCount: 5,
 		isUnique: true,
-		additionalClassname: 'bg-gradient-to-l from-primary-500 to-white-200 from-[-5rem]',
+		additionalClassname: 'md:bg-gradient-to-l md:from-primary-500 md:to-white-200 md:from-[-5rem]',
 	},
 	{
 		label: 'گزارش گیری',
