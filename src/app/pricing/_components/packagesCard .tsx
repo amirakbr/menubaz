@@ -6,90 +6,7 @@ import { thousandSeparator } from '@/app/tools';
 import Button from '@/app/commonComponents/button';
 import TickIcon from '@/app/public/icons/tick';
 import ArrowDown from '@/app/public/icons/arrowDown';
-
-const cardData = [
-  {
-    isSpecial: false,
-    title: 'منو دیداری',
-    subtitle: 'منوی دیجیتال حرفه‌ای با پنل اختصاصی',
-    price: '960000',
-    off: '20',
-    actualPrice: '768000',
-    featureTitle: 'ویژگی‌هایی که خواهید داشت:',
-    feature: [
-      { label: 'منو آنلاین با آدرس اختصاصی' },
-      { label: 'ایجاد منوهای مجزا برای سرویس های داخلی، بیرون‌بر و دلیوری' },
-      { label: 'امکان درج عکس و توضیحات برای محصولات' },
-      { label: 'دسته بندی آیتم‌های منو' },
-      { label: 'زمانبندی برای نمایش یک دسته مانند صبحانه' },
-      { label: 'درج ساعات کاری به تفکیک ایام هفته' },
-      { label: 'نمایش لوگو، توضیحات و شبکه‌های اجتماعی' },
-      { label: 'پنل اختصاصی برای تغییر و بروزرسانی منو' },
-      { label: 'نمایش سایت رستوران در گوگل' },
-      { label: 'دسترسی به منو از طریق qr کد اختصاصی' },
-    ],
-  },
-  {
-    isSpecial: false,
-    title: 'پایه',
-    subtitle: 'سیستم مدیریت و سفارش‌گیری هوشمند',
-    price: '5760000',
-    off: '20',
-    actualPrice: '4608000',
-    featureTitle: 'تمام امکانات منو دیداری به همراه:',
-    feature: [
-      { label: 'سیستم حسابداری و فروش هوشمند' },
-      { label: 'سیستم ثبت سفارش آنلاین' },
-      { label: 'ایجاد انواع گزارش‌های مالی و آماری' },
-      { label: 'مدیریت پیک همراه با پنل اختصاصی' },
-      { label: 'باشگاه مشتریان با قابلیت ارسال پیامک هوشمند' },
-      { label: 'سیستم ایجاد کدهای تخفیف هوشمند و شرطی' },
-      { label: 'ثبت خودکار اطلاعات مشتریان' },
-      { label: 'سفارش گیر گارسون' },
-      { label: 'امکان ایجاد بی نهایت چاپگر' },
-    ],
-  },
-  {
-    isSpecial: true,
-    title: 'استاندارد',
-    subtitle: 'پرداخت آنلاین و سامانه ارسال سفارش و پیک',
-    price: '13680000',
-    off: '20',
-    actualPrice: '10944000',
-    featureTitle: 'تمامی امکانات پلن پایه به همراه:',
-    feature: [
-      { label: 'درگاه پرداخت آنلاین اختصاصی' },
-      { label: 'پشتیبانی از پرداخت اعتباری' },
-      { label: 'قابلیت پرداخت انعام' },
-      { label: 'امکان ایجاد تخفیف داینامیک' },
-      { label: 'کیف پول الکترونیک' },
-      { label: 'هزینه پیک داینامیک' },
-      { label: 'امکان افزودن و ویرایش مشتریان به صورت گروهی' },
-      { label: 'مشاهده آیتم‌های محبوب هر مشتری' },
-      { label: 'شمارنده سفارش' },
-    ],
-  },
-  {
-    isSpecial: false,
-    title: 'استاندارد',
-    subtitle: 'پرداخت آنلاین و سامانه ارسال سفارش و پیک',
-    price: '21600000',
-    off: '20',
-    actualPrice: '17280000',
-    featureTitle: 'تمامی امکانات پلن استاندارد به همراه:',
-    feature: [
-      { label: 'قابلیت چند شعبگی' },
-      { label: 'اختصاص ضریب شارژ به مشتریان' },
-      { label: 'سیستم کش بک' },
-      { label: 'انبارداری هوشمند' },
-      { label: 'امکان ارسال پیامک‌های شرطی و خودکار' },
-      { label: 'قابلیت ایجاد کارت هدیه' },
-      { label: 'سیستم رزرواسیون' },
-      { label: 'پرداخت دونگی' },
-      { label: 'سیستم نظرسنجی مشتریان' },
-    ],
-  },
-];
+import {packageData} from './packageData';
 
 const PackagesCard = () => {
   const [selectedButton, setSelectedButton] = useState('yearly');
@@ -100,7 +17,7 @@ const PackagesCard = () => {
         <GroupButton selectedButton={selectedButton} setSelectedButton={setSelectedButton} />
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-        {cardData?.map(({ actualPrice, feature, isSpecial, off, price, subtitle, title, featureTitle }, index) => {
+        {packageData?.map(({ actualPrice, feature, isSpecial, off, price, subtitle, title, featureTitle }, index) => {
           return (
             <div
               className={`bg-whiteBlack-100 border ${isSpecial ? 'border-primary' : 'border-white-600'} rounded-xl overflow-hidden`}
