@@ -14,7 +14,9 @@ const CardDigitalBranch = () => {
           </p>
         </div>
         <div className="flex items-center gap-3">
-          <Button variant="secondary">کسب اطلاعات بیشتر</Button>
+          <Button variant="contained" color="secondary" className="text-xs">
+            کسب اطلاعات بیشتر
+          </Button>
           <p className="text-complementary font-medium rounded-lg border border-complementary p-1 px-2">برند خودتو بساز!</p>
         </div>
       </div>

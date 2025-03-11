@@ -29,7 +29,7 @@ const MobileMenu = () => {
           <div onClick={handleOpenMenu}>
             <MenuIcon />
           </div>
-          <Button size="small" variant="secondary" className="py-1">
+          <Button size="small" variant="contained" color='secondary' className="py-1">
             ثبت نام
           </Button>
         </div>
@@ -93,10 +93,10 @@ const MobileMenu = () => {
                     );
                   })}
                 </div>
-                <Button size="small" variant="primary">
+                <Button size="small" variant="contained" color="primary">
                   درخواست دمو
                 </Button>
-                <Button variant="outline" size="small">
+                <Button variant="outlined" color="secondary" size="small">
                   ورود
                 </Button>
               </div>

@@ -15,7 +15,7 @@ const Blog = () => {
         </div>
 
         <div className="w-full flex justify-center">
-          <Button size="small" variant="secondary">
+          <Button size="small" variant="contained" color="secondary">
             پست های بیشتر
           </Button>
         </div>

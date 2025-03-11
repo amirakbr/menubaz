@@ -33,14 +33,16 @@ const HeroSection = () => {
             <Button
               size="medium"
               className="bg-gray border-gray"
-              variant="secondary"
+              variant="contained"
+              color="secondary"
             >
               ثبت نام و دریافت فوری
             </Button>
             <Button
               size="medium"
               className="bg-transparent text-black border-gray"
-              variant="outline"
+              variant="outlined"
+              color="secondary"
             >
               مشاهده تعرفه و امکانات
             </Button>

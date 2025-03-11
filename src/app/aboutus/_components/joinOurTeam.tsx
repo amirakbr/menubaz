@@ -10,7 +10,7 @@ const JoinOurTeam = () => {
           است، همین امروز به تیم ما بپیوندید!
         </p>
       </div>
-      <Button variant="secondary" size="medium">
+      <Button variant="contained" color="secondary" className='font-medium text-base'>
         رزومه خود را برای ما ارسال کنید
       </Button>
     </div>

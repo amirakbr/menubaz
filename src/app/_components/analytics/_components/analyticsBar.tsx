@@ -7,7 +7,8 @@ const AnalyticsBar = ({ analyticsBarData, feature, setFeature }: IAnalyticsBarPr
       {analyticsBarData?.map(({ label, name }) => (
         <Button
           size="small"
-          variant={feature === name ? `secondary` : 'none'}
+          variant={feature === name ? `contained` : 'text'}
+          color='secondary'
           onClick={() => {
             if (feature !== name) {
               setFeature?.(name);

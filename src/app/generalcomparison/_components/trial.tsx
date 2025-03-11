@@ -45,7 +45,7 @@ const Trial = () => {
               <p className="text-title font-semibold">{title}</p>
               <p className="text-subtitle-400 font-medium text-xs">{subtitle}</p>
             </div>
-            <Button variant="secondary" className="w-max">
+            <Button variant="contained" color='secondary' className="w-max !p-2 text-8 font-medium" size='small'>
               کسب اطلاعات بیشتر
             </Button>
           </div>

@@ -45,7 +45,9 @@ const PackagesCard = () => {
                     <span className="text-base font-normal text-title">تومان</span>
                   </p>
                 </div>
-                <Button variant={isSpecial && isWidthLarger ? 'secondary' : 'outline'}>شروع کنید</Button>
+                <Button variant={isSpecial && isWidthLarger ? 'contained' : 'outlined'} color={'secondary'}>
+                  شروع کنید
+                </Button>
               </div>
               <div className="p-5 flex flex-col gap-2">
                 <p className="font-medium text-sm text-title">{featureTitle}</p>

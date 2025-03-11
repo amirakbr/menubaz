@@ -13,7 +13,7 @@ const Header = () => {
         همه با 60٪ هزینه کمتر.
       </h2>
       <div className="flex items-center gap-6 justify-center">
-        <Button variant="secondary" className="w-max">
+        <Button variant="contained" color="secondary" className="w-max" size="medium">
           همین حالا رایگان شروع کنید !
         </Button>
         <div className="flex flex-col gap-2">

@@ -59,8 +59,8 @@ const Compare = () => {
       <div className="flex items-center gap-1 p-2 rounded-xl bg-white-200 w-max m-auto">
         {compareData?.map(({ label, name }) => (
           <Button
-            size="small"
-            variant={compare === name ? `secondary` : 'none'}
+            variant={compare === name ? `contained` : 'text'}
+            color="secondary"
             onClick={() => {
               if (compare !== name) {
                 setCompare?.(name);

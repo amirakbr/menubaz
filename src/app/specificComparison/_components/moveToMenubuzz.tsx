@@ -27,7 +27,9 @@ const MoveToMenuBuzz = () => {
           <div className="w-[90%] h-[371px] bg-whiteBlack-100 border-2 border-[#EFEFEF] rounded-lg border-b-transparent"></div>
         </div>
       </div>
-      <Button variant="secondary">اکنون منوباز را امتحان کنید</Button>
+      <Button variant="contained" color="secondary" size="medium">
+        اکنون منوباز را امتحان کنید
+      </Button>
     </div>
   );
 };

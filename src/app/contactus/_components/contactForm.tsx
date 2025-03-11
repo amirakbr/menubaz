@@ -22,7 +22,7 @@ const ContactForm = () => {
           <span className={`flex gap-1 text-title-400 after:block after:content-["*"]`}>کد امنیتی</span>
           {siteKey && <ReCAPTCHA sitekey={siteKey} ref={recaptcha} hl="fa" />}
         </div>
-        <Button variant="secondary" className="w-max m-auto">
+        <Button variant="contained" color="secondary" className="w-max">
           ارسال پیام
         </Button>
       </form>

@@ -7,7 +7,7 @@ import MobileMenu from './mobileMenu';
 
 const Header = () => {
   return (
-    <header className="p-4 container mx-auto sticky top-0 bg-whiteBlack-100 z-[+100000]" id='header'>
+    <header className="p-4 container mx-auto sticky top-0 bg-whiteBlack-100 z-[+100000]" id="header">
       <div className="flex items-center justify-between gap-4 hidden lg:flex">
         <div className="flex items-center gap-12">
           <div className="flex items-center gap-2">
@@ -32,10 +32,10 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-3">
           <p className="text-title text-sm font-medium">درخواست دمو</p>
-          <Button variant="outline" size="small">
+          <Button variant="outlined" color="secondary" size='small'>
             ورود
           </Button>
-          <Button variant="secondary" size="small">
+          <Button variant="contained" color="secondary" size='small'>
             ثبت نام
           </Button>
         </div>
