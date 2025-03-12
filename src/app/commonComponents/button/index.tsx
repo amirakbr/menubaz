@@ -4,12 +4,9 @@ interface IButtonProps extends MUIButtonProps {
   size?: 'small' | 'medium' | 'large';
 }
 
-const Button: React.FC<IButtonProps> = ({ size = 'medium', variant = 'contained', children, ...props }) => {
+const Button: React.FC<IButtonProps> = ({ size = 'medium', children, ...props }) => {
   return (
-    <MUIButton
-      {...props}
-      size={size} // MUI handles padding and font-size internally
-    >
+    <MUIButton {...props} size={size}>
       {children}
     </MUIButton>
   );
