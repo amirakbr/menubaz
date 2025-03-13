@@ -8,8 +8,8 @@ import createEmotionCache from './lib/createEmotionCache';
 import ThemeProviderWrapper from './lib/theme-provider';
 
 export const metadata: Metadata = {
-  title: 'منو باز',
-  description: 'منو باز یک پلتفرم برای تمامی اقراد ، مشتریان ، رستوران دار ها ، کافه دار ها و ...',
+  title: 'منوباز',
+  description: 'منوباز یک پلتفرم برای تمامی اقراد ، مشتریان ، رستوران دار ها ، کافه دار ها و ...',
 };
 
 const iranYekan = localFont({

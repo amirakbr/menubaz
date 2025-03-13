@@ -13,17 +13,22 @@ import UserInterface from './_components/userInterface/userInterface';
 const DigitalMenu = () => {
   return (
     <>
-      <Header />
-      <Benefits />
-      <UserInterface />
-      <Services />
-      <CardDigitalBranch />
-      <BenefitsOfUse />
+      <div className="px-4 flex flex-col gap-12 xl:gap-[200px]">
+        <Header />
+        <Benefits />
+        <UserInterface />
+        <Services />
+        <CardDigitalBranch />
+        <BenefitsOfUse />
+      </div>
+
       <Businesses />
-      <ManagementAndUpdate />
-      <FAQ />
-      <ContactUs />
-      <FooterSuggestion />
+      <div className="px-4 flex flex-col gap-12 xl:gap-[200px]">
+        <ManagementAndUpdate />
+        <FAQ />
+        <ContactUs />
+        <FooterSuggestion />
+      </div>
     </>
   );
 };

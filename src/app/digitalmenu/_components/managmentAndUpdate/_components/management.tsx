@@ -7,7 +7,7 @@ const Management = () => {
       <div className="flex flex-col gap-6 order-1 lg:order-2 lg:max-w-[826px]">
         <div className="flex flex-col gap-2">
           <p className="text-title font-semibold text-2xl">تعرفه ها</p>
-          <p className="text-subtitle-400 text-xl">منو باز حامی شما!</p>
+          <p className="text-subtitle-400 text-xl">منوباز حامی شما!</p>
         </div>
         <p className="text-title-400 font-medium text-xl">
           با بررسی کسب و کار های مختلف در سراسر کشور و با هدف حمایت از کسب و کار های کوچک، منوباز قصد دارد تا بخشی از خدمات خود را به صورت رایگان در

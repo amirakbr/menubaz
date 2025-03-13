@@ -49,9 +49,9 @@ const PackagesCard = () => {
                   شروع کنید
                 </Button>
               </div>
-              <div className="p-5 flex flex-col gap-2">
+              <div className="p-5 flex flex-col gap-3">
                 <p className="font-medium text-sm text-title">{featureTitle}</p>
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-3">
                   {feature?.map(({ label, hadMoreInfo }, featureIndex) => (
                     <div className="flex items-center gap-1" key={`package feature ${featureIndex} ${index}`}>
                       <span className="w-3 h-3 rounded-full bg-primary-300 flex items-center justify-center shrink-0">

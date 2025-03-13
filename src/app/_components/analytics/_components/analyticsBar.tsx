@@ -8,7 +8,7 @@ const AnalyticsBar = ({ analyticsBarData, feature, setFeature }: IAnalyticsBarPr
         <Button
           size="small"
           variant={feature === name ? `contained` : 'text'}
-          color='secondary'
+          color="secondary"
           onClick={() => {
             if (feature !== name) {
               setFeature?.(name);
@@ -16,7 +16,15 @@ const AnalyticsBar = ({ analyticsBarData, feature, setFeature }: IAnalyticsBarPr
           }}
           key={`feature ${name}`}
         >
-          <p className={`flex flex-col relative text-xs xl:text-sm ${feature === name ? 'after:content-[" "] after:w-4 after:border-b after:border-b-primary after:top-[1px] after:relative' : 'text-title-400'}`}>{label}</p>
+          <p
+            className={`flex flex-col relative text-xs xl:text-sm ${
+              feature === name
+                ? 'after:content-[" "] after:w-4 after:border-b after:border-b-primary after:top-[1px] after:relative after:transition-all hover:after:w-full'
+                : 'text-title-400'
+            }`}
+          >
+            {label}
+          </p>
         </Button>
       ))}
     </div>

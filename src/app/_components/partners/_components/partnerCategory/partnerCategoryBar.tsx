@@ -22,7 +22,7 @@ const PartnerCategoryBar = ({ selectedTab, setSelectedTab }: IPartnerCategoryBar
               <p
                 className={`flex flex-col relative text-xs xl:text-sm ${
                   selectedTab === name
-                    ? 'after:content-[" "] after:w-4 after:border-b after:border-b-primary after:top-[1px] after:relative'
+                    ? 'after:content-[" "] after:w-4 after:border-b after:border-b-primary after:top-[1px] after:relative after:transition-all hover:after:w-full'
                     : 'text-title-400'
                 }`}
               >

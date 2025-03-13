@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="order-2 xl:order-1 ">
         <div className="flex flex-col gap-6 max-w-[581px] m-auto xl:m-[unset]">
           <h1 className="text-3xl font-bold text-center xl:text-right xl:text-4xl min-h-32 lg:min-h-20">
-            منو باز ، بهترین نرم افزار رستوران،{" "}
+            منوباز ، بهترین نرم افزار رستوران،{" "}
             <span className="text-complementary">
               <TypeAnimationC />
             </span>
