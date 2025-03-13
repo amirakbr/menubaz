@@ -5,7 +5,7 @@ import ClockIcon from '@/app/public/icons/clockIcon';
 
 const FeedbacksHeader = () => {
   return (
-    <div className="flex flex-col items-center gap-5">
+    <div className="flex flex-col items-center gap-5 px-4">
       <div className="flex flex-col items-center gap-4 text-center">
         <h4 className="text-3xl font-bold max-w-72">آنچه صاحبان کسب و کار در مورد منوباز می‌گویند</h4>
         <p className="text-base text-subtitle-400 tracking-wider">
