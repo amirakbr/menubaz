@@ -14,7 +14,9 @@ const BenefitsOfUse = () => {
         </p>
       </div>
       <div className="relative w-full h-40 lg:h-64 bg-[url(/digitalMenu/benefitsChart.webp)] bg-contain bg-no-repeat bg-center"></div>
-      <Button variant="secondary" className='w-full lg:w-max'>کسب اطلاعات بیشتر</Button>
+      <Button variant="contained" color="secondary" className="w-full lg:w-max text-xs">
+        کسب اطلاعات بیشتر
+      </Button>
     </div>
   );
 };

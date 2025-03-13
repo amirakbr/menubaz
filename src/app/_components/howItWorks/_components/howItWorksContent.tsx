@@ -13,8 +13,8 @@ const HowItWorksContent = ({ content, index, title }: Omit<IHowItWorksDataProps,
           <h4 className="text-2xl text-title font-semibold">{title}</h4>
         </div>
         <p className="text-base text-subtitle">{content}</p>
-        <Button className="w-max" size="small" variant="secondary">
-        کسب اطلاعات بیشتر
+        <Button className="w-max" size="small" variant="contained" color="secondary">
+          کسب اطلاعات بیشتر
         </Button>
       </div>
     </div>

@@ -1,11 +1,8 @@
-import Button from "@/app/commonComponents/button";
-import { partnerCategoryBarData } from "./partnerCategoryData";
-import { IPartnerCategoryBarProps } from "../../interface";
+import Button from '@/app/commonComponents/button';
+import { partnerCategoryBarData } from './partnerCategoryData';
+import { IPartnerCategoryBarProps } from '../../interface';
 
-const PartnerCategoryBar = ({
-  selectedTab,
-  setSelectedTab,
-}: IPartnerCategoryBarProps) => {
+const PartnerCategoryBar = ({ selectedTab, setSelectedTab }: IPartnerCategoryBarProps) => {
   return (
     <>
       <div className="flex justify-center ">
@@ -13,7 +10,8 @@ const PartnerCategoryBar = ({
           {partnerCategoryBarData?.map(({ label, name }) => (
             <Button
               size="small"
-              variant={selectedTab === name ? `secondary` : "none"}
+              variant={selectedTab === name ? `contained` : 'text'}
+              color="secondary"
               onClick={() => {
                 if (selectedTab !== name) {
                   setSelectedTab?.(name);
@@ -24,12 +22,12 @@ const PartnerCategoryBar = ({
               <p
                 className={`flex flex-col relative text-xs xl:text-sm ${
                   selectedTab === name
-                    ? 'after:content-[" "] after:w-4 after:border-b after:border-b-primary after:top-[1px] after:relative'
-                    : "text-title-400"
+                    ? 'after:content-[" "] after:w-4 after:border-b after:border-b-primary after:top-[1px] after:relative after:transition-all hover:after:w-full'
+                    : 'text-title-400'
                 }`}
               >
                 {label}
-              </p>{" "}
+              </p>{' '}
             </Button>
           ))}
         </div>

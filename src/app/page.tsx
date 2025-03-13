@@ -21,8 +21,10 @@ export default function Home() {
       <TestimonialSection />
       <div className="px-4 flex flex-col gap-12 xl:gap-[200px]">
         <PartnersSection />
-        <FeedBacksSection />
-        <BlogSection />
+      </div>
+      <FeedBacksSection />
+      <BlogSection />
+      <div className="px-4 flex flex-col gap-12 xl:gap-[200px]">
         <ContactUs />
         <FooterSuggestion />
       </div>

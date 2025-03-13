@@ -8,7 +8,7 @@ const GroupButton = ({ selectedButton, setSelectedButton }: IGroupButtonProps) =
         onClick={() => {
           setSelectedButton('monthly');
         }}
-        variant={selectedButton === 'monthly' ? 'primary' : 'none'}
+        variant={selectedButton === 'monthly' ? 'contained' : 'text'}
       >
         <p className={`${selectedButton === 'monthly' ? 'text-title' : 'text-title-400'}`}>ماهانه</p>
       </Button>
@@ -16,7 +16,7 @@ const GroupButton = ({ selectedButton, setSelectedButton }: IGroupButtonProps) =
         onClick={() => {
           setSelectedButton('yearly');
         }}
-        variant={selectedButton === 'yearly' ? 'primary' : 'none'}
+        variant={selectedButton === 'yearly' ? 'contained' : 'text'}
       >
         <p className={`${selectedButton === 'yearly' ? 'text-title' : 'text-title-400'}`}>سالانه</p>
       </Button>

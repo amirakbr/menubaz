@@ -2,8 +2,9 @@
 
 import ArrowDownIcon from '@/app/public/icons/arrowDownIcon';
 import { useState } from 'react';
+import { ITabConfigProps } from './tabConfig';
 
-const Menu = ({ label, subMenu }: { label: string; subMenu: { label: string }[] }) => {
+const Menu = ({ label, subMenu }: { label: string; subMenu: ITabConfigProps['subMenu'] }) => {
   const [isSubMenuOpen, setIsSUbMenuOpen] = useState(false);
   return (
     <div
@@ -22,10 +23,16 @@ const Menu = ({ label, subMenu }: { label: string; subMenu: { label: string }[] 
         </div>
       </div>
       {isSubMenuOpen ? (
-        <div className="absolute top-full rounded-lg p-4 bg-white-100 shadow-xl min-w-64 border border-gray-100 animate-appear">
-          {subMenu?.map(({ label }, index) => (
-            <p className="px-3 py-2 text-sm	font-medium" key={`sub menu ${index}`}>
-              {label}
+        <div className="absolute top-full rounded-lg p-2 bg-white-100 shadow-xl min-w-64 border border-gray-100 animate-appear">
+          {subMenu?.map(({ label, icon: Icon }, index) => (
+            <p className="px-3 py-2 text-sm	font-medium flex items-center gap-2 group cursor-pointer" key={`sub menu ${index}`}>
+              {Icon ? (
+                <span className="group-hover:text-primary transition-all">
+                  <Icon height={25} width={25} primaryColor="currentColor" />
+                </span>
+              ) : null}
+
+              <span className="text-subtitle-600 group-hover:text-title-900 transition-all">{label}</span>
             </p>
           ))}
         </div>
