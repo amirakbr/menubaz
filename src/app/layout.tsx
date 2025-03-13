@@ -4,10 +4,12 @@ import localFont from 'next/font/local';
 import Header from './_components/header/header';
 import Footer from './_components/footer/footer';
 import SocialLinkQuickMessage from './_components/message/message';
+import createEmotionCache from './lib/createEmotionCache';
+import ThemeProviderWrapper from './lib/theme-provider';
 
 export const metadata: Metadata = {
-  title: 'منو باز',
-  description: 'منو باز یک پلتفرم برای تمامی اقراد ، مشتریان ، رستوران دار ها ، کافه دار ها و ...',
+  title: 'منوباز',
+  description: 'منوباز یک پلتفرم برای تمامی اقراد ، مشتریان ، رستوران دار ها ، کافه دار ها و ...',
 };
 
 const iranYekan = localFont({
@@ -69,10 +71,12 @@ export default function RootLayout({
   return (
     <html lang="fa-IR" dir="rtl">
       <body className={`antialiased ${iranYekan?.className} ${iranYekan?.variable} lg:!overflow-auto`}>
-        <Header />
-        <SocialLinkQuickMessage />
-        <main className="mt-10 flex flex-col gap-12 container mx-auto xl:gap-[200px] max-w-[1323px] m-auto">{children}</main>
-        <Footer />
+        <ThemeProviderWrapper>
+          <Header />
+          <SocialLinkQuickMessage />
+          <main className="mt-10 flex flex-col gap-12 container mx-auto xl:gap-[200px] max-w-[1323px] m-auto">{children}</main>
+          <Footer />
+        </ThemeProviderWrapper>
       </body>
     </html>
   );

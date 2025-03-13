@@ -9,7 +9,9 @@ const TestimonialCard = ({ content, icon: Icon, title }: ITestimonialsData) => {
       </div>
       <p className="text-title text-base font-bold">{title}</p>
       <p className="text-subtitle-400 text-sm font-medium">{content}</p>
-      <Button variant="primary" className="font-semibold">کسب اطلاعات بیشتر</Button>
+      <Button variant="contained" color="secondary" className="font-semibold">
+        کسب اطلاعات بیشتر
+      </Button>
     </div>
   );
 };

@@ -19,10 +19,10 @@ const FooterSuggestion = () => {
               داشته باشید.
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-4 w-max mx-auto lg:m-0">
-              <Button size="small" variant="secondary">
+              <Button size="small" variant="contained" color="secondary">
                 شروع ثبت نام
               </Button>
-              <Button size="small" variant="outline" className="border-gray">
+              <Button size="small" variant="outlined" color="secondary">
                 درخواست دمو
               </Button>
             </div>

@@ -19,3 +19,7 @@
 }
 
 html { scroll-behavior: smooth; }
+
+fieldset{
+  @apply !border !border-white-400
+}

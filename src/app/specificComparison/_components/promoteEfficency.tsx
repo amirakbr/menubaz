@@ -6,7 +6,7 @@ const PromoteEfficiency = () => {
       <p className="max-w-80 text-center text-subtitle-400 text-base font-medium">
         95 درصد از تیم ها پس از تغییر به منوباز کنترل بهتری بر روی داده های خود دارند.
       </p>
-      <Button variant="secondary">منوباز را به صورت رایگان دریافت کنید</Button>
+      <Button variant="contained" color='secondary' size='medium'>منوباز را به صورت رایگان دریافت کنید</Button>
     </div>
   );
 };

@@ -5,15 +5,17 @@ import { thousandSeparator } from '@/app/tools';
 
 const PackageComparisonHeader = ({ selectedPeriod, setSelectedPackage, selectedPackage, isWidthLarger }: IPackageComparisonHeaderProps) => {
   return (
-    <div className='flex flex-col gap-4'>
+    <div className="flex flex-col gap-4">
       <div className="bg-white-200 rounded-lg py-5 px-2 xl:px-4">
         <div className="grid grid-cols-4 gap-1 md:gap-4">
           {packageData?.map(({ title, off, isSpecial }, index) => (
             <div className="flex flex-col gap-2.5 items-center text-center" key={`package comparison header button ${index}`}>
               <p className={`text-xs xl:text-xl ${isSpecial ? 'text-title' : 'text-title-400'}`}>{title}</p>
               <Button
-                variant={isSpecial ? 'secondary' : 'outline'}
+                variant={isSpecial ? 'contained' : 'outlined'}
+                color={'secondary'}
                 className="!p-1 !py-0 w-full md:!py-2"
+                size="small"
                 onClick={() => {
                   if (!isWidthLarger) {
                     setSelectedPackage(packageData[index]);

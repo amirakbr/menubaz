@@ -85,7 +85,8 @@ const PackageComparisonDetailContainer = ({ isWidthLarger, selectedPackage }: IP
       {!isFullView ? (
         <div className="flex items-center justify-center">
           <Button
-            variant="outline"
+            variant="outlined"
+            color='secondary'
             className="mx-auto w-max"
             onClick={() => {
               setIsFullView(true);

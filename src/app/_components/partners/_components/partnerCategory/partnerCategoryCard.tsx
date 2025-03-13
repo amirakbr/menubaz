@@ -21,11 +21,11 @@ const PartnerCategoryCard = ({ selectedTab }: IPartnerCategoryCardProps) => {
                 </span>
                 <p className="flex flex-col lg:flex-row gap-2">
                   <span className="font-semibold text-title">{title}</span>
-                  <span className='text-subtitle !font-bold text-sm'>{description}</span>
+                  <span className="text-subtitle !font-bold text-sm">{description}</span>
                 </p>
               </div>
             ))}
-            <Button variant="secondary" size="small" className="w-max">
+            <Button variant="contained" color="secondary" size="small" className="w-max">
               بیشتر بدانید
             </Button>
           </div>

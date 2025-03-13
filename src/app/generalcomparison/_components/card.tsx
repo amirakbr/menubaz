@@ -9,7 +9,7 @@ const Card = () => {
           <p className="text-xl text-title font-semibold">
             منوباز پلتفرم آنلاینی است که به کافه یا رستوران شما کمک می کند در عصر دیجیتال رونق پیدا کند.
           </p>
-          <Button variant="secondary" className="w-max">
+          <Button variant="contained" color="secondary" className="w-max text-xs">
             همین حالا ثبت نام کنید
           </Button>
         </div>

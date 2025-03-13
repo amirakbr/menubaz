@@ -1,30 +1,14 @@
-import { Button as BTN } from '@mui/base';
-import { clsx } from 'clsx';
-import { IButtonProps } from './interface';
+import { Button as MUIButton, ButtonProps as MUIButtonProps } from '@mui/material';
 
-const Button: React.FC<IButtonProps> = ({ children, size = 'medium', variant = 'primary', className, ...props }) => {
-  const baseClasses = 'font-bold rounded-lg transition-all focus:ring disabled:opacity-50 disabled:cursor-not-allowed';
+interface IButtonProps extends MUIButtonProps {
+  size?: 'small' | 'medium' | 'large';
+}
 
-  const sizeClasses = {
-    small: 'py-1 md:py-2 px-3 md:px-3.5 text-xs md:text-xs !font-medium',
-    medium: 'px-3 py-2 text-xs !font-medium',
-    large: 'px-5 py-4 text-xs !font-medium',
-  };
-
-  const variantStyles = {
-    primary: 'bg-primary text-title hover:bg-yellow-500 focus:ring-primary-300',
-    secondary: 'bg-gray text-white border border-black-100 hover:bg-gray-800 focus:ring-gray-400',
-    ghost: 'border border-yellow-400 text-yellow-400 bg-transparent hover:bg-yellow-100 hover:border-yellow-500',
-    danger: 'bg-red-500 text-white hover:bg-red-600 focus:ring-red-300',
-    success: 'bg-green-500 text-white hover:bg-green-600 focus:ring-green-300',
-    outline: 'border border-white-600 text-title-400 bg-transparent hover:border-black hover:text-black',
-    none: '',
-  };
-
+const Button: React.FC<IButtonProps> = ({ size = 'medium', children, ...props }) => {
   return (
-    <BTN className={clsx(baseClasses, sizeClasses[size], variantStyles[variant], className)} {...props}>
+    <MUIButton {...props} size={size}>
       {children}
-    </BTN>
+    </MUIButton>
   );
 };
 

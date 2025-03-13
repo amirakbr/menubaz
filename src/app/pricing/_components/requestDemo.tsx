@@ -15,7 +15,7 @@ const RequestDemo = () => {
             نرم افزارها بی نیاز می‌کند.
           </p>
         </div>
-        <Button className="mx-2" variant="secondary">
+        <Button className="mx-2" variant="contained" color="secondary">
           درخواست دمو
         </Button>
       </div>

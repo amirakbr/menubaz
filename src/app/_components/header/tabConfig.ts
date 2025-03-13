@@ -1,42 +1,70 @@
-const tabConfig = [
+import { IIConProps } from '@/app/commonComponents/commonInterface';
+import HomeIcon from '@/app/public/icons/homeIcon';
+import { ReactNode } from 'react';
+
+export interface ITabConfigProps {
+  label: string;
+  smallScreenOnly?: boolean;
+  subMenu?: { label: string; icon?: ({ height, width }: IIConProps) => ReactNode }[];
+  icon?: ({ height, width }: IIConProps) => ReactNode;
+}
+
+const tabConfig: ITabConfigProps[] = [
+  {
+    label: 'صفحه اصلی',
+    smallScreenOnly: true,
+    icon: HomeIcon,
+  },
   {
     label: 'سفارش ها',
-  },
-  {
-    label: 'سرویس ها',
     subMenu: [
       {
-        label: 'تست',
+        label: 'سفارش بر روی میز',
+        icon: HomeIcon,
       },
       {
-        label: 'تست',
+        label: 'سفارش تحویل حضوری',
+        icon: HomeIcon,
+      },
+      {
+        label: 'سفارش ارسال با پیک',
+        icon: HomeIcon,
       },
     ],
   },
   {
-    label: 'کسب و کارها',
-    subMenu: [
-      {
-        label: 'تست',
-      },
-      {
-        label: 'تست',
-      },
-    ],
+    label: 'منو دیجیتال',
+    smallScreenOnly: true,
+    icon: HomeIcon,
   },
   {
     label: 'بیشتر',
     subMenu: [
       {
-        label: 'تست',
+        label: 'راهنمای محصول',
+        icon: HomeIcon,
       },
       {
-        label: 'تست',
+        label: 'بلاگ',
+        icon: HomeIcon,
+      },
+      {
+        label: 'قوانین و شرایط استفاده',
+        icon: HomeIcon,
+      },
+      {
+        label: 'حریم خصوصی',
+        icon: HomeIcon,
       },
     ],
   },
   {
     label: 'تعرفه ها',
+    icon: HomeIcon,
+  },
+  {
+    label: 'تماس با ما',
+    icon: HomeIcon,
   },
 ];
 
