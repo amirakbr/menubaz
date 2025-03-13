@@ -18,7 +18,7 @@ const ContactForm = () => {
         </div>
         <div className="flex flex-col gap-5">
           <Input name="firstName" control={control} label="نام و نام خانوادگی" required />
-          <Input name="phoneNumber" control={control} label="شماره تلفن همراه" required type="number" />
+          <Input name="phoneNumber" control={control} label="شماره تلفن همراه" required type="tel" />
           <Input name="complexName" control={control} label="نام مجموعه" required type="number" />
 
           <Select

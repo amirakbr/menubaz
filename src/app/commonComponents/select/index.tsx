@@ -2,17 +2,18 @@
 
 import { Controller, FieldValues } from 'react-hook-form';
 import { ISelectProps } from './interface';
-import { Field } from '@base-ui-components/react';
-import { Option, Select as BaseSelect } from '@mui/base';
+import { Autocomplete, MenuItem, Select as SL } from '@mui/material';
+import CloseIcon from '@/app/public/icons/closeIcon';
+import ArrowDownIcon from '@/app/public/icons/arrowDownIcon';
 
 const Select = <TData extends FieldValues, TOp extends Object>({
   control,
   label,
   name,
   required = false,
+  options,
   getOption,
   getValue,
-  options,
 }: ISelectProps<TData, TOp>) => {
   return (
     <>
@@ -21,27 +22,30 @@ const Select = <TData extends FieldValues, TOp extends Object>({
         name={name}
         render={({ field: { onChange, value }, fieldState: { error, invalid } }) => {
           return (
-            <Field.Root className={() => 'flex flex-col gap-1'}>
-              <Field.Label
-                className={() => {
-                  return `flex gap-1 text-title-400 text-sm font-medium	 ${required ? 'after:block after:content-["*"]' : ''}`;
-                }}
-              >
-                {label}
-              </Field.Label>
-              <BaseSelect
+            <div className={'flex flex-col gap-1'}>
+              <label className={`flex gap-1 text-title-400 text-sm font-medium	 ${required ? 'after:block after:content-["*"]' : ''}`}>{label}</label>
+              <SL
+                dir="rtl"
+                error={invalid}
+                className="h-[40px] !rounded-lg !outline-0 bg-whiteBlack-100 text-title"
                 value={value}
                 onChange={onChange}
-                className="h-[40px] !outline-0 bg-whiteBlack-100 rounded-lg border border-white-400 text-title"
+                defaultValue={''}
+                variant="outlined"
+                IconComponent={() => (
+                  <span className="ml-4">
+                    <ArrowDownIcon />
+                  </span>
+                )}
               >
-                {options?.map((props) => (
-                  <Option key={Math.random()} value={getValue(props)}>
-                    {getOption(props)}
-                  </Option>
+                {options?.map((option) => (
+                  <MenuItem key={`select option ${Math.random()}`} value={getValue(option)}>
+                    {getOption(option)}
+                  </MenuItem>
                 ))}
-              </BaseSelect>
-              {error?.message ? <Field.Error className={() => 'text-red-500'}>{error?.message}</Field.Error> : null}
-            </Field.Root>
+              </SL>
+              {error?.message ? <span className={'text-red-500'}>{error?.message}</span> : null}
+            </div>
           );
         }}
       />

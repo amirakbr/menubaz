@@ -160,7 +160,7 @@ export default {
 				marquee: 'marquee 20s linear infinite',
 				marqueeReverse: 'marqueeReverse 20s linear infinite',
 				appear: 'appear 0.5s linear',
-				moveLeft: 'moveLeft 0.1s linear',
+				moveLeft: 'moveLeft 0.1s ease',
 				radar: 'radar 5s linear infinite',
 
 				// benefits section animation

@@ -16,7 +16,7 @@ const ContactForm = () => {
     <div className="py-12 px-10 rounded-lg bg-white-200">
       <form className="flex flex-col gap-7">
         <Input control={control} name="name" label="نام و نام خانوادگی" required />
-        <Input control={control} name="phoneNumber" type="number" direction="ltr" label="شماره تماس" required />
+        <Input control={control} name="phoneNumber" type="tel" direction="ltr" label="شماره تماس" required />
         <TextArea control={control} name="message" label="متن پیام" />
         <div className="flex flex-col gap-1">
           <span className={`flex gap-1 text-title-400 after:block after:content-["*"]`}>کد امنیتی</span>

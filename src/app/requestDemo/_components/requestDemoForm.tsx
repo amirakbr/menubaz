@@ -2,10 +2,18 @@
 
 import Button from '@/app/commonComponents/button';
 import Input from '@/app/commonComponents/input/input';
+import Select from '@/app/commonComponents/select';
 import { useForm } from 'react-hook-form';
 
 const RequestDemoForm = () => {
-  const { control } = useForm();
+  const { control } = useForm({
+    defaultValues: {
+      ownerName: '',
+      phoneNumber: '',
+      businessName: '',
+      callDate: '',
+    },
+  });
   return (
     <div className="bg-white-200 rounded-lg px-3 py-16 lg:px-12">
       <div className="flex flex-col gap-4">
@@ -15,26 +23,25 @@ const RequestDemoForm = () => {
           <Input label="نام و نام خانوادگی مدیریت" required control={control} name="ownerName" />
           <Input label="شماره تماس" required control={control} name="phoneNumber" direction="ltr" />
 
-          <label htmlFor="businessName" className="flex flex-col gap-1">
-            <p className="text-title-400">نوع کسب و کار *</p>
-            <select
-              name="businessName"
-              className="h-[40px] !outline-0 bg-whiteBlack-100 rounded-lg border border-white-400 text-title"
-              id="businessName"
-            >
-              <option value="coffeeShop">کافی شاپ</option>
-            </select>
-          </label>
-          <label htmlFor="suggestedTime" className="flex flex-col gap-1">
-            <p className="text-title-400">زمان انتخابی جهت تماس کارشناسان ما با شما *</p>
-            <select
-              name="suggestedTime"
-              className="h-[40px] !outline-0 bg-whiteBlack-100 rounded-lg border border-white-400 text-title"
-              id="suggestedTime"
-            >
-              <option value="coffeeShop">10 شب</option>
-            </select>
-          </label>
+          <Select
+            control={control}
+            label="کسب و کار"
+            options={[{ label: 'کافی شاپ', value: 'coffeeshop' }]}
+            name="businessName"
+            required
+            getOption={({ label }) => label}
+            getValue={({ value }) => value}
+          />
+          <Select
+            control={control}
+            label="زمان انتخابی جهت تماس کارشناسان ما با شما"
+            options={[{ label: 'شب 10', value: 'night-10pm' }]}
+            name="callDate"
+            required
+            getOption={({ label }) => label}
+            getValue={({ value }) => value}
+          />
+
           <Button variant="contained" color="secondary" size="medium" className="self-start">
             ارسال درخواست
           </Button>

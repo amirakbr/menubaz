@@ -1,3 +1,5 @@
+'use client'
+
 import MinimalLogo from '@/app/public/logo/minimalLog';
 import tabConfig from './tabConfig';
 import Menu from './menu';
@@ -7,7 +9,7 @@ import MobileMenu from './mobileMenu';
 
 const Header = () => {
   return (
-    <header className="p-4 container mx-auto sticky top-0 bg-whiteBlack-100 z-[+100000]" id="header">
+    <header className="p-4 xl:container mx-auto sticky top-0 bg-whiteBlack-100 z-[+100000]" id="header">
       <div className="flex items-center justify-between gap-4 hidden lg:flex">
         <div className="flex items-center gap-12">
           <div className="flex items-center gap-2">
@@ -17,13 +19,13 @@ const Header = () => {
             <p className="text-xl font-semibold">منوباز</p>
           </div>
           <div className="flex items-center gap-4">
-            {tabConfig?.map(({ label, subMenu }, index) => {
+            {tabConfig?.map(({ label, subMenu, smallScreenOnly }, index) => {
               return (
                 <Fragment key={`tab ${index}`}>
                   {subMenu && subMenu?.length > 0 ? (
                     <Menu label={label} subMenu={subMenu} />
                   ) : (
-                    <p className="py-2 px-3 text-sm	font-medium">{label}</p>
+                    <>{!smallScreenOnly ? <p className="py-2 px-3 text-sm	font-medium">{label}</p> : null}</>
                   )}
                 </Fragment>
               );
@@ -32,10 +34,10 @@ const Header = () => {
         </div>
         <div className="flex items-center gap-3">
           <p className="text-title text-sm font-medium">درخواست دمو</p>
-          <Button variant="outlined" color="secondary" size='small'>
+          <Button variant="outlined" color="secondary" size="small">
             ورود
           </Button>
-          <Button variant="contained" color="secondary" size='small'>
+          <Button variant="contained" color="secondary" size="small">
             ثبت نام
           </Button>
         </div>

@@ -6,11 +6,11 @@ import MenuIcon from '@/app/public/icons/menu';
 import MinimalLogo from '@/app/public/logo/minimalLog';
 import { Fragment, useState } from 'react';
 import tabConfig from './tabConfig';
-import { Accordion } from '@base-ui-components/react';
 import ArrowDownIcon from '@/app/public/icons/arrowDownIcon';
 import { socialMediaLink } from '@/app/constant/commonInfo';
 import Link from 'next/link';
 import LargeLogo from '@/app/public/logo/largeLogo';
+import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
 
 const MobileMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +29,7 @@ const MobileMenu = () => {
           <div onClick={handleOpenMenu}>
             <MenuIcon />
           </div>
-          <Button size="small" variant="contained" color='secondary' className="py-1">
+          <Button size="small" variant="contained" color="secondary" className="py-1">
             ثبت نام
           </Button>
         </div>
@@ -56,47 +56,57 @@ const MobileMenu = () => {
                 <div className="p-1 cursor-pointer" onClick={handleCloseMenu}>
                   <CloseCircle height={30} width={30} />
                 </div>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col">
                   {tabConfig?.map(({ label, subMenu }, index) => {
                     return (
                       <Fragment key={`tab ${index}`}>
                         {subMenu && subMenu?.length > 0 ? (
                           <>
-                            <Accordion.Root dir="rtl">
-                              <Accordion.Item>
-                                <Accordion.Header>
-                                  <Accordion.Trigger
-                                    className={({ open }) => {
-                                      return `w-full flex items-center justify-between ${open ? '[&>div]:rotate-180' : ''}`;
-                                    }}
+                            <Accordion
+                              classes={{
+                                expanded: '!rounded-xl',
+                                root: '!m-0 !border-0 !shadow-none !outline-0 after:!hidden before:!hidden !bg-transparent',
+                              }}
+                              key={`mobile menu ${index}`}
+                            >
+                              <AccordionSummary
+                                classes={{ content: '!m-0 !bg-transparent !min-h-auto' }}
+                                expandIcon={
+                                  <span
+                                    className={`h-7 w-7 rounded-full transition-all flex items-center justify-center text-white-900 bg-transparent`}
                                   >
-                                    <p className="py-2 px-3 text-sm	font-medium">{label}</p>
-                                    <div className={`transition-all ${false ? 'rotate-180' : ''}`}>
-                                      <ArrowDownIcon width={12} height={12} />
-                                    </div>
-                                  </Accordion.Trigger>
-                                </Accordion.Header>
-                                <Accordion.Panel>
-                                  {subMenu?.map(({ label }, index) => (
-                                    <p key={`accordion ${index}`} className="py-2 px-3 text-sm	font-medium">
-                                      {label}
-                                    </p>
-                                  ))}
-                                </Accordion.Panel>
-                              </Accordion.Item>
-                            </Accordion.Root>
+                                    <ArrowDownIcon primaryColor="currentColor" width={12} height={12} />
+                                  </span>
+                                }
+                              >
+                                <p className="text-sm	font-medium">{label}</p>
+                              </AccordionSummary>
+                              <AccordionDetails classes={{ root: '!m-0 !py-0' }}>
+                                {subMenu?.map(({ label, icon: Icon }, index) => (
+                                  <p className="px-3 py-2 text-sm	font-medium flex items-center gap-2 group cursor-pointer transition-all hover:bg-gray-100 hover:rounded-full" key={`sub menu ${index}`}>
+                                    {Icon ? (
+                                      <span className="text-title">
+                                        <Icon height={20} width={20} primaryColor="currentColor" />
+                                      </span>
+                                    ) : null}
+
+                                    <span className="text-subtitle-600 group-hover:text-title-900 transition-all">{label}</span>
+                                  </p>
+                                ))}
+                              </AccordionDetails>
+                            </Accordion>
                           </>
                         ) : (
-                          <p className="py-2 px-3 text-sm	font-medium">{label}</p>
+                          <p className="py-2 px-3 text-sm	font-medium transition-all hover:bg-gray-100 hover:rounded-full">{label}</p>
                         )}
                       </Fragment>
                     );
                   })}
                 </div>
-                <Button size="small" variant="contained" color="primary">
+                <Button variant="contained" color="primary" className='rounded-full'>
                   درخواست دمو
                 </Button>
-                <Button variant="outlined" color="secondary" size="small">
+                <Button variant="outlined" color="secondary" className='rounded-full'>
                   ورود
                 </Button>
               </div>
