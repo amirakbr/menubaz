@@ -170,11 +170,11 @@ export default {
 			keyframes: {
 				marquee: {
 					from: { transform: 'translateX(0)' },
-					to: { transform: 'translateX(99%)' },
+					to: { transform: 'translateX(50%)' },
 				},
 				marqueeReverse: {
-					from: { transform: 'translateX(99%)' },
-					to: { transform: 'translateX(0)' },
+					from: { transform: 'translateX(50%)' },
+					to: { transform: 'translateX(0%)' },
 				},
 				appear: {
 					from: { opacity: '0' },
